@@ -1,0 +1,344 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the cedit++ package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: cedit++ 1.0.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-08-15 21:44+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=CHARSET\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: src/cedit/io/file.cpp:45
+msgid "Untitled"
+msgstr ""
+
+#: src/cedit/view/about_dialog.cpp:27
+msgid "User-friendly source code editor"
+msgstr ""
+
+#: src/cedit/view/file_chooser_dialog.cpp:23
+#: src/cedit/view/save_check_dialog.cpp:24
+msgid "Cancel"
+msgstr ""
+
+#: src/cedit/view/flymake_dialog.cpp:22
+msgid "Command: "
+msgstr ""
+
+#: src/cedit/view/font_chooser_dialog.cpp:21
+msgid "Font"
+msgstr ""
+
+#: src/cedit/view/library_chooser_dialog.cpp:25
+#: src/cedit/view/library_save_dialog.cpp:24
+msgid "Name: "
+msgstr ""
+
+#: src/cedit/view/library_chooser_dialog.cpp:33
+msgid "Name"
+msgstr ""
+
+#: src/cedit/view/library_save_dialog.cpp:24
+msgid "Library Add"
+msgstr ""
+
+#: src/cedit/view/library_save_dialog.cpp:68
+msgid "Do you overwrite an existing library?"
+msgstr ""
+
+#: src/cedit/view/save_check_dialog.cpp:21
+msgid "Do you want to save changes?"
+msgstr ""
+
+#: src/cedit/view/save_check_dialog.cpp:22 src/cedit/view/window.cpp:383
+msgid "Save"
+msgstr ""
+
+#: src/cedit/view/save_check_dialog.cpp:23
+msgid "Don't Save"
+msgstr ""
+
+#: src/cedit/view/search_bar.cpp:27
+msgid "Case Sensitive"
+msgstr ""
+
+#: src/cedit/view/search_bar.cpp:27
+msgid "Control Characters"
+msgstr ""
+
+#: src/cedit/view/search_bar.cpp:27
+msgid "Interactive"
+msgstr ""
+
+#: src/cedit/view/window.cpp:355
+msgid "Open"
+msgstr ""
+
+#: src/cedit/view/window.cpp:383
+msgid "Save As"
+msgstr ""
+
+#: src/cedit/view/window.cpp:442
+msgid "Move to Line"
+msgstr ""
+
+#: src/cedit/view/window.cpp:442
+msgid "Line Number: "
+msgstr ""
+
+#: src/cedit/view/window.cpp:478
+msgid "Library Call"
+msgstr ""
+
+#: src/cedit/view/window.cpp:496
+msgid "Library Remove"
+msgstr ""
+
+#: src/cedit/view/window.cpp:527
+msgid "Tab Width"
+msgstr ""
+
+#: src/cedit/view/window.cpp:527
+msgid "New Tab Width: "
+msgstr ""
+
+#: src/resource/ui/menubar.xml.h:1
+msgid "File(_F)"
+msgstr ""
+
+#: src/resource/ui/menubar.xml.h:2
+msgid "New(_N)"
+msgstr ""
+
+#: src/resource/ui/menubar.xml.h:3
+msgid "Open(_O)"
+msgstr ""
+
+#: src/resource/ui/menubar.xml.h:4
+msgid "Reload(_R)"
+msgstr ""
+
+#: src/resource/ui/menubar.xml.h:5
+msgid "Save(_S)"
+msgstr ""
+
+#: src/resource/ui/menubar.xml.h:6
+msgid "Save As(_A)"
+msgstr ""
+
+#: src/resource/ui/menubar.xml.h:7
+msgid "Print(_P)"
+msgstr ""
+
+#: src/resource/ui/menubar.xml.h:8
+msgid "Quit(_Q)"
+msgstr ""
+
+#: src/resource/ui/menubar.xml.h:9
+msgid "Edit(_E)"
+msgstr ""
+
+#: src/resource/ui/menubar.xml.h:10 src/resource/ui/popup.xml.h:1
+msgid "Undo(_U)"
+msgstr ""
+
+#: src/resource/ui/menubar.xml.h:11 src/resource/ui/popup.xml.h:2
+msgid "Redo(_R)"
+msgstr ""
+
+#: src/resource/ui/menubar.xml.h:12 src/resource/ui/popup.xml.h:3
+msgid "Cut(_X)"
+msgstr ""
+
+#: src/resource/ui/menubar.xml.h:13 src/resource/ui/popup.xml.h:4
+msgid "Copy(_C)"
+msgstr ""
+
+#: src/resource/ui/menubar.xml.h:14 src/resource/ui/popup.xml.h:5
+msgid "Paste(_P)"
+msgstr ""
+
+#: src/resource/ui/menubar.xml.h:15
+msgid "Delete(_D)"
+msgstr ""
+
+#: src/resource/ui/menubar.xml.h:16
+msgid "Kill Line(_K)"
+msgstr ""
+
+#: src/resource/ui/menubar.xml.h:17 src/resource/ui/popup.xml.h:6
+msgid "Select All(_S)"
+msgstr ""
+
+#: src/resource/ui/menubar.xml.h:18
+msgid "Search(_S)"
+msgstr ""
+
+#: src/resource/ui/menubar.xml.h:19
+msgid "Find(_F)"
+msgstr ""
+
+#: src/resource/ui/menubar.xml.h:20
+msgid "Replace(_R)"
+msgstr ""
+
+#: src/resource/ui/menubar.xml.h:21
+msgid "Move(_M)"
+msgstr ""
+
+#: src/resource/ui/menubar.xml.h:22
+msgid "Move to Line(_J)"
+msgstr ""
+
+#: src/resource/ui/menubar.xml.h:23
+msgid "Move to Beginning of File(_U)"
+msgstr ""
+
+#: src/resource/ui/menubar.xml.h:24
+msgid "Move to End of File(_D)"
+msgstr ""
+
+#: src/resource/ui/menubar.xml.h:25
+msgid "Move to Beginning of Line(_L)"
+msgstr ""
+
+#: src/resource/ui/menubar.xml.h:26
+msgid "Move to End of Line(_R)"
+msgstr ""
+
+#: src/resource/ui/menubar.xml.h:27
+msgid "Library(_L)"
+msgstr ""
+
+#: src/resource/ui/menubar.xml.h:28 src/resource/ui/popup.xml.h:7
+msgid "Call(_C)"
+msgstr ""
+
+#: src/resource/ui/menubar.xml.h:29
+msgid "Add(_A)"
+msgstr ""
+
+#: src/resource/ui/menubar.xml.h:30
+msgid "Remove(_R)"
+msgstr ""
+
+#: src/resource/ui/menubar.xml.h:31
+msgid "Option(_O)"
+msgstr ""
+
+#: src/resource/ui/menubar.xml.h:32
+msgid "Encoding(_E)"
+msgstr ""
+
+#: src/resource/ui/menubar.xml.h:33
+msgid "Font(_F)"
+msgstr ""
+
+#: src/resource/ui/menubar.xml.h:34
+msgid "Show Toolbar(_S)"
+msgstr ""
+
+#: src/resource/ui/menubar.xml.h:35
+msgid "Tab Width(_T)"
+msgstr ""
+
+#: src/resource/ui/menubar.xml.h:36
+msgid "Flymake(_M)"
+msgstr ""
+
+#: src/resource/ui/menubar.xml.h:37
+msgid "Wrap Text"
+msgstr ""
+
+#: src/resource/ui/menubar.xml.h:38
+msgid "Show Line Numbers"
+msgstr ""
+
+#: src/resource/ui/menubar.xml.h:39
+msgid "Auto Indent"
+msgstr ""
+
+#: src/resource/ui/menubar.xml.h:40
+msgid "Highlight Current Line"
+msgstr ""
+
+#: src/resource/ui/menubar.xml.h:41
+msgid "Spaces instead of Tabs"
+msgstr ""
+
+#: src/resource/ui/menubar.xml.h:42
+msgid "Hungry Delete"
+msgstr ""
+
+#: src/resource/ui/menubar.xml.h:43
+msgid "Help(_H)"
+msgstr ""
+
+#: src/resource/ui/menubar.xml.h:44
+msgid "Version Info(_V)"
+msgstr ""
+
+#: src/resource/ui/toolbar.xml.h:1
+msgid "Create a new file"
+msgstr ""
+
+#: src/resource/ui/toolbar.xml.h:2
+msgid "Open a file"
+msgstr ""
+
+#: src/resource/ui/toolbar.xml.h:3
+msgid "Reload a file"
+msgstr ""
+
+#: src/resource/ui/toolbar.xml.h:4
+msgid "Save a file"
+msgstr ""
+
+#: src/resource/ui/toolbar.xml.h:5
+msgid "Save as a new file"
+msgstr ""
+
+#: src/resource/ui/toolbar.xml.h:6
+msgid "Print a file"
+msgstr ""
+
+#: src/resource/ui/toolbar.xml.h:7
+msgid "Undo an operation"
+msgstr ""
+
+#: src/resource/ui/toolbar.xml.h:8
+msgid "Redo an operation"
+msgstr ""
+
+#: src/resource/ui/toolbar.xml.h:9
+msgid "Cut text and copy to clipboard"
+msgstr ""
+
+#: src/resource/ui/toolbar.xml.h:10
+msgid "Copy text to clipboard"
+msgstr ""
+
+#: src/resource/ui/toolbar.xml.h:11
+msgid "Paste text from clipboard"
+msgstr ""
+
+#: src/resource/ui/toolbar.xml.h:12
+msgid "Find a string"
+msgstr ""
+
+#: src/resource/ui/toolbar.xml.h:13
+msgid "Find and replace a string"
+msgstr ""
+
+#: src/resource/ui/toolbar.xml.h:14
+msgid "Call library"
+msgstr ""

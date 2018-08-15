@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<interface>
+  <menu id="popup">
+    <section>
+      <item>
+        <attribute name="label" translatable="yes">Undo(_U)</attribute>
+        <attribute name="icon">edit-undo</attribute>
+        <attribute name="action">win.edit_undo</attribute>
+      </item>
+      <item>
+        <attribute name="label" translatable="yes">Redo(_R)</attribute>
+        <attribute name="icon">edit-redo</attribute>
+        <attribute name="action">win.edit_redo</attribute>
+      </item>
+    </section>
+    <section>
+      <item>
+        <attribute name="label" translatable="yes">Cut(_X)</attribute>
+        <attribute name="icon">edit-cut</attribute>
+        <attribute name="action">win.edit_cut</attribute>
+      </item>
+      <item>
+        <attribute name="label" translatable="yes">Copy(_C)</attribute>
+        <attribute name="icon">edit-copy</attribute>
+        <attribute name="action">win.edit_copy</attribute>
+      </item>
+      <item>
+        <attribute name="label" translatable="yes">Paste(_P)</attribute>
+        <attribute name="icon">edit-paste</attribute>
+        <attribute name="action">win.edit_paste</attribute>
+      </item>
+    </section>
+    <section>
+      <item>
+        <attribute name="label" translatable="yes">Select All(_S)</attribute>
+        <attribute name="icon">edit-select-all</attribute>
+        <attribute name="action">win.edit_select_all</attribute>
+      </item>
+    </section>
+    <section>
+      <item>
+        <attribute name="label" translatable="yes">Call(_C)</attribute>
+        <attribute name="icon">help-about</attribute>
+        <attribute name="action">win.library_call</attribute>
+      </item>
+    </section>
+  </menu>
+</interface>

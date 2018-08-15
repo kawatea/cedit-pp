@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<interface>
+  <menu id="menubar">
+    <submenu>
+      <attribute name="label" translatable="yes">File(_F)</attribute>
+      <section>
+        <item>
+          <attribute name="label" translatable="yes">New(_N)</attribute>
+          <attribute name="icon">document-new</attribute>
+          <attribute name="action">win.file_new</attribute>
+        </item>
+        <item>
+          <attribute name="label" translatable="yes">Open(_O)</attribute>
+          <attribute name="icon">document-open</attribute>
+          <attribute name="action">win.file_open</attribute>
+        </item>
+        <item>
+          <attribute name="label" translatable="yes">Reload(_R)</attribute>
+          <attribute name="icon">view-refresh</attribute>
+          <attribute name="action">win.file_reload</attribute>
+        </item>
+      </section>
+      <section>
+        <item>
+          <attribute name="label" translatable="yes">Save(_S)</attribute>
+          <attribute name="icon">document-save</attribute>
+          <attribute name="action">win.file_save</attribute>
+        </item>
+        <item>
+          <attribute name="label" translatable="yes">Save As(_A)</attribute>
+          <attribute name="icon">document-save-as</attribute>
+          <attribute name="action">win.file_save_as</attribute>
+        </item>
+      </section>
+      <section>
+        <item>
+          <attribute name="label" translatable="yes">Print(_P)</attribute>
+          <attribute name="icon">document-print</attribute>
+          <attribute name="action">win.file_print</attribute>
+        </item>
+      </section>
+      <section>
+        <item>
+          <attribute name="label" translatable="yes">Quit(_Q)</attribute>
+          <attribute name="icon">application-exit</attribute>
+          <attribute name="action">win.file_quit</attribute>
+        </item>
+      </section>
+    </submenu>
+    <submenu>
+      <attribute name="label" translatable="yes">Edit(_E)</attribute>
+      <section>
+        <item>
+          <attribute name="label" translatable="yes">Undo(_U)</attribute>
+          <attribute name="icon">edit-undo</attribute>
+          <attribute name="action">win.edit_undo</attribute>
+        </item>
+        <item>
+          <attribute name="label" translatable="yes">Redo(_R)</attribute>
+          <attribute name="icon">edit-redo</attribute>
+          <attribute name="action">win.edit_redo</attribute>
+        </item>
+      </section>
+      <section>
+        <item>
+          <attribute name="label" translatable="yes">Cut(_X)</attribute>
+          <attribute name="icon">edit-cut</attribute>
+          <attribute name="action">win.edit_cut</attribute>
+        </item>
+        <item>
+          <attribute name="label" translatable="yes">Copy(_C)</attribute>
+          <attribute name="icon">edit-copy</attribute>
+          <attribute name="action">win.edit_copy</attribute>
+        </item>
+        <item>
+          <attribute name="label" translatable="yes">Paste(_P)</attribute>
+          <attribute name="icon">edit-paste</attribute>
+          <attribute name="action">win.edit_paste</attribute>
+        </item>
+        <item>
+          <attribute name="label" translatable="yes">Delete(_D)</attribute>
+          <attribute name="icon">edit-delete</attribute>
+          <attribute name="action">win.edit_delete</attribute>
+        </item>
+        <item>
+          <attribute name="label" translatable="yes">Kill Line(_K)</attribute>
+          <attribute name="icon">edit-clear</attribute>
+          <attribute name="action">win.edit_kill_line</attribute>
+        </item>
+      </section>
+      <section>
+        <item>
+          <attribute name="label" translatable="yes">Select All(_S)</attribute>
+          <attribute name="icon">edit-select-all</attribute>
+          <attribute name="action">win.edit_select_all</attribute>
+        </item>
+      </section>
+    </submenu>
+    <submenu>
+      <attribute name="label" translatable="yes">Search(_S)</attribute>
+      <section>
+        <item>
+          <attribute name="label" translatable="yes">Find(_F)</attribute>
+          <attribute name="icon">edit-find</attribute>
+          <attribute name="action">win.search_find</attribute>
+        </item>
+        <item>
+          <attribute name="label" translatable="yes">Replace(_R)</attribute>
+          <attribute name="icon">edit-find-replace</attribute>
+          <attribute name="action">win.search_replace</attribute>
+        </item>
+      </section>
+    </submenu>
+    <submenu>
+      <attribute name="label" translatable="yes">Move(_M)</attribute>
+      <section>
+        <item>
+          <attribute name="label" translatable="yes">Move to Line(_J)</attribute>
+          <attribute name="icon">go-jump</attribute>
+          <attribute name="action">win.move_line</attribute>
+        </item>
+        <item>
+          <attribute name="label" translatable="yes">Move to Beginning of File(_U)</attribute>
+          <attribute name="icon">go-up</attribute>
+          <attribute name="action">win.move_top</attribute>
+        </item>
+        <item>
+          <attribute name="label" translatable="yes">Move to End of File(_D)</attribute>
+          <attribute name="icon">go-bottom</attribute>
+          <attribute name="action">win.move_bottom</attribute>
+        </item>
+        <item>
+          <attribute name="label" translatable="yes">Move to Beginning of Line(_L)</attribute>
+          <attribute name="icon">go-first</attribute>
+          <attribute name="action">win.move_left</attribute>
+        </item>
+        <item>
+          <attribute name="label" translatable="yes">Move to End of Line(_R)</attribute>
+          <attribute name="icon">go-last</attribute>
+          <attribute name="action">win.move_right</attribute>
+        </item>
+      </section>
+    </submenu>
+    <submenu>
+      <attribute name="label" translatable="yes">Library(_L)</attribute>
+      <section>
+        <item>
+          <attribute name="label" translatable="yes">Call(_C)</attribute>
+          <attribute name="icon">help-about</attribute>
+          <attribute name="action">win.library_call</attribute>
+        </item>
+        <item>
+          <attribute name="label" translatable="yes">Add(_A)</attribute>
+          <attribute name="icon">list-add</attribute>
+          <attribute name="action">win.library_add</attribute>
+        </item>
+        <item>
+          <attribute name="label" translatable="yes">Remove(_R)</attribute>
+          <attribute name="icon">list-remove</attribute>
+          <attribute name="action">win.library_remove</attribute>
+        </item>
+      </section>
+    </submenu>
+    <submenu>
+      <attribute name="label" translatable="yes">Option(_O)</attribute>
+      <section>
+        <submenu>
+        <attribute name="label" translatable="yes">Encoding(_E)</attribute>
+        <item>
+          <attribute name="label">JIS</attribute>
+          <attribute name="action">win.option_encoding</attribute>
+          <attribute name="target">JIS</attribute>
+        </item>
+        <item>
+          <attribute name="label">Shift__JIS</attribute>
+          <attribute name="action">win.option_encoding</attribute>
+          <attribute name="target">Shift_JIS</attribute>
+        </item>
+        <item>
+          <attribute name="label">EUC-JP</attribute>
+          <attribute name="action">win.option_encoding</attribute>
+          <attribute name="target">EUC-JP</attribute>
+        </item>
+        <item>
+          <attribute name="label">UTF-8</attribute>
+          <attribute name="action">win.option_encoding</attribute>
+          <attribute name="target">UTF-8</attribute>
+        </item>
+        <item>
+          <attribute name="label">UTF-16</attribute>
+          <attribute name="action">win.option_encoding</attribute>
+          <attribute name="target">UTF-16</attribute>
+        </item>
+        <item>
+          <attribute name="label">UTF-16BE</attribute>
+          <attribute name="action">win.option_encoding</attribute>
+          <attribute name="target">UTF-16BE</attribute>
+        </item>
+        <item>
+          <attribute name="label">UTF-16LE</attribute>
+          <attribute name="action">win.option_encoding</attribute>
+          <attribute name="target">UTF-16LE</attribute>
+        </item>
+        </submenu>
+        <item>
+          <attribute name="label" translatable="yes">Font(_F)</attribute>
+          <attribute name="action">win.option_font</attribute>
+        </item>
+        <item>
+          <attribute name="label" translatable="yes">Show Toolbar(_S)</attribute>
+          <attribute name="action">win.option_show_toolbar</attribute>
+        </item>
+      </section>
+      <section>
+        <item>
+          <attribute name="label" translatable="yes">Tab Width(_T)</attribute>
+          <attribute name="action">win.option_tab_width</attribute>
+        </item>
+        <item>
+          <attribute name="label" translatable="yes">Flymake(_M)</attribute>
+          <attribute name="action">win.option_flymake</attribute>
+        </item>
+        <item>
+          <attribute name="label" translatable="yes">Wrap Text</attribute>
+          <attribute name="action">win.option_wrap_text</attribute>
+        </item>
+        <item>
+          <attribute name="label" translatable="yes">Show Line Numbers</attribute>
+          <attribute name="action">win.option_line_numbers</attribute>
+        </item>
+        <item>
+          <attribute name="label" translatable="yes">Auto Indent</attribute>
+          <attribute name="action">win.option_auto_indent</attribute>
+        </item>
+        <item>
+          <attribute name="label" translatable="yes">Highlight Current Line</attribute>
+          <attribute name="action">win.option_highlight_line</attribute>
+        </item>
+        <item>
+          <attribute name="label" translatable="yes">Spaces instead of Tabs</attribute>
+          <attribute name="action">win.option_insert_spaces</attribute>
+        </item>
+        <item>
+          <attribute name="label" translatable="yes">Hungry Delete</attribute>
+          <attribute name="action">win.option_hungry_delete</attribute>
+        </item>
+      </section>
+    </submenu>
+    <submenu>
+      <attribute name="label" translatable="yes">Help(_H)</attribute>
+      <section>
+        <item>
+          <attribute name="label" translatable="yes">Version Info(_V)</attribute>
+          <attribute name="icon">dialog-information</attribute>
+          <attribute name="action">win.help_version_info</attribute>
+        </item>
+      </section>
+    </submenu>
+  </menu>
+</interface>

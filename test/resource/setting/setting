@@ -1,0 +1,11 @@
+[General]
+bool=true
+int=1
+string=test
+
+[c++]
+bool=false
+int=2
+string=c++
+
+[java]

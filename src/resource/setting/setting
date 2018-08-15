@@ -1,0 +1,38 @@
+[General]
+Border Width=5
+Width=650
+Height=800
+Show Toolbar=true
+Tab Width=4
+Wrap Text=true
+Show Line Numbers=true
+Auto Indent=true
+Highlight Current Line=true
+Spaces instead of Tabs=true
+Hungry Delete=true
+
+[Accelerator]
+win.file_new=<Control>n
+win.file_open=<Control>o
+win.file_reload=<Control>r;F5
+win.file_save=<Control>s
+win.file_save_as=<Control><Shift>s
+win.file_print=<Control>p
+win.file_quit=<Control>q;<Alt>F4
+win.edit_undo=<Control>z
+win.edit_redo=<Control>y
+win.edit_cut=<Control>x
+win.edit_copy=<Control>c
+win.edit_paste=<Control>v
+win.edit_delete=<Control>d
+win.edit_kill_line=<Control>k
+win.edit_select_all=<Control>a
+win.search_find=<Control>f
+win.search_replace=<Control>h
+win.move_line=<Control>g
+win.move_top=<Control>Up
+win.move_bottom=<Control>Down
+win.move_left=<Control>Left
+win.move_right=<Control>Right
+win.library_call=<Control>l
+win.help_version_info=F1

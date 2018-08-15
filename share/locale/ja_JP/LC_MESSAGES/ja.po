@@ -1,0 +1,345 @@
+# Japanese translations for cedit++ package
+# cedit++ パッケージに対する英訳.
+# Copyright (C) 2018 THE cedit++'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the cedit++ package.
+# Automatically generated, 2018.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: cedit++ 1.0.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-08-15 21:44+0900\n"
+"PO-Revision-Date: 2018-05-19 19:20+0900\n"
+"Last-Translator: Automatically generated\n"
+"Language-Team: none\n"
+"Language: ja\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=CP932\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: src/cedit/io/file.cpp:45
+msgid "Untitled"
+msgstr "編集中のファイル"
+
+#: src/cedit/view/about_dialog.cpp:27
+msgid "User-friendly source code editor"
+msgstr "使いやすいソースコードエディタ"
+
+#: src/cedit/view/file_chooser_dialog.cpp:23
+#: src/cedit/view/save_check_dialog.cpp:24
+msgid "Cancel"
+msgstr "キャンセル"
+
+#: src/cedit/view/flymake_dialog.cpp:22
+msgid "Command: "
+msgstr "コマンド: "
+
+#: src/cedit/view/font_chooser_dialog.cpp:21
+msgid "Font"
+msgstr "フォント"
+
+#: src/cedit/view/library_chooser_dialog.cpp:25
+#: src/cedit/view/library_save_dialog.cpp:24
+msgid "Name: "
+msgstr "名前: "
+
+#: src/cedit/view/library_chooser_dialog.cpp:33
+msgid "Name"
+msgstr "名前"
+
+#: src/cedit/view/library_save_dialog.cpp:24
+msgid "Library Add"
+msgstr "ライブラリの追加"
+
+#: src/cedit/view/library_save_dialog.cpp:68
+msgid "Do you overwrite an existing library?"
+msgstr "既に存在するライブラリを上書きしますか？"
+
+#: src/cedit/view/save_check_dialog.cpp:21
+msgid "Do you want to save changes?"
+msgstr "編集中のファイルを保存しますか？"
+
+#: src/cedit/view/save_check_dialog.cpp:22 src/cedit/view/window.cpp:383
+msgid "Save"
+msgstr "保存"
+
+#: src/cedit/view/save_check_dialog.cpp:23
+msgid "Don't Save"
+msgstr "保存しない"
+
+#: src/cedit/view/search_bar.cpp:27
+msgid "Case Sensitive"
+msgstr "大文字と小文字を区別"
+
+#: src/cedit/view/search_bar.cpp:27
+msgid "Control Characters"
+msgstr "制御文字を使用"
+
+#: src/cedit/view/search_bar.cpp:27
+msgid "Interactive"
+msgstr "１つずつ置換"
+
+#: src/cedit/view/window.cpp:355
+msgid "Open"
+msgstr "開く"
+
+#: src/cedit/view/window.cpp:383
+msgid "Save As"
+msgstr "名前をつけて保存"
+
+#: src/cedit/view/window.cpp:442
+msgid "Move to Line"
+msgstr "指定行に移動"
+
+#: src/cedit/view/window.cpp:442
+msgid "Line Number: "
+msgstr "行番号: "
+
+#: src/cedit/view/window.cpp:478
+msgid "Library Call"
+msgstr "ライブラリの呼び出し"
+
+#: src/cedit/view/window.cpp:496
+msgid "Library Remove"
+msgstr "ライブラリの削除"
+
+#: src/cedit/view/window.cpp:527
+msgid "Tab Width"
+msgstr "タブ幅"
+
+#: src/cedit/view/window.cpp:527
+msgid "New Tab Width: "
+msgstr "新しいタブ幅"
+
+#: src/resource/ui/menubar.xml.h:1
+msgid "File(_F)"
+msgstr "ファイル(_F)"
+
+#: src/resource/ui/menubar.xml.h:2
+msgid "New(_N)"
+msgstr "新規作成(_N)"
+
+#: src/resource/ui/menubar.xml.h:3
+msgid "Open(_O)"
+msgstr "開く(_O)"
+
+#: src/resource/ui/menubar.xml.h:4
+msgid "Reload(_R)"
+msgstr "再読み込み(_R)"
+
+#: src/resource/ui/menubar.xml.h:5
+msgid "Save(_S)"
+msgstr "上書き保存(_S)"
+
+#: src/resource/ui/menubar.xml.h:6
+msgid "Save As(_A)"
+msgstr "名前をつけて保存(_A)"
+
+#: src/resource/ui/menubar.xml.h:7
+msgid "Print(_P)"
+msgstr "印刷(_P)"
+
+#: src/resource/ui/menubar.xml.h:8
+msgid "Quit(_Q)"
+msgstr "終了(_Q)"
+
+#: src/resource/ui/menubar.xml.h:9
+msgid "Edit(_E)"
+msgstr "編集(_E)"
+
+#: src/resource/ui/menubar.xml.h:10 src/resource/ui/popup.xml.h:1
+msgid "Undo(_U)"
+msgstr "元に戻す(_U)"
+
+#: src/resource/ui/menubar.xml.h:11 src/resource/ui/popup.xml.h:2
+msgid "Redo(_R)"
+msgstr "やり直す(_R)"
+
+#: src/resource/ui/menubar.xml.h:12 src/resource/ui/popup.xml.h:3
+msgid "Cut(_X)"
+msgstr "切り取り(_X)"
+
+#: src/resource/ui/menubar.xml.h:13 src/resource/ui/popup.xml.h:4
+msgid "Copy(_C)"
+msgstr "コピー(_C)"
+
+#: src/resource/ui/menubar.xml.h:14 src/resource/ui/popup.xml.h:5
+msgid "Paste(_P)"
+msgstr "貼り付け(_P)"
+
+#: src/resource/ui/menubar.xml.h:15
+msgid "Delete(_D)"
+msgstr "削除(_D)"
+
+#: src/resource/ui/menubar.xml.h:16
+msgid "Kill Line(_K)"
+msgstr "一行削除(_K)"
+
+#: src/resource/ui/menubar.xml.h:17 src/resource/ui/popup.xml.h:6
+msgid "Select All(_S)"
+msgstr "全て選択(_S)"
+
+#: src/resource/ui/menubar.xml.h:18
+msgid "Search(_S)"
+msgstr "検索(_S)"
+
+#: src/resource/ui/menubar.xml.h:19
+msgid "Find(_F)"
+msgstr "検索(_F)"
+
+#: src/resource/ui/menubar.xml.h:20
+msgid "Replace(_R)"
+msgstr "置換(_R)"
+
+#: src/resource/ui/menubar.xml.h:21
+msgid "Move(_M)"
+msgstr "移動(_M)"
+
+#: src/resource/ui/menubar.xml.h:22
+msgid "Move to Line(_J)"
+msgstr "指定行に移動(_J)"
+
+#: src/resource/ui/menubar.xml.h:23
+msgid "Move to Beginning of File(_U)"
+msgstr "ファイルの先頭に移動(_U)"
+
+#: src/resource/ui/menubar.xml.h:24
+msgid "Move to End of File(_D)"
+msgstr "ファイルの末尾に移動(_D)"
+
+#: src/resource/ui/menubar.xml.h:25
+msgid "Move to Beginning of Line(_L)"
+msgstr "行頭に移動(_L)"
+
+#: src/resource/ui/menubar.xml.h:26
+msgid "Move to End of Line(_R)"
+msgstr "行末に移動(_R)"
+
+#: src/resource/ui/menubar.xml.h:27
+msgid "Library(_L)"
+msgstr "ライブラリ(_L)"
+
+#: src/resource/ui/menubar.xml.h:28 src/resource/ui/popup.xml.h:7
+msgid "Call(_C)"
+msgstr "呼び出し(_C)"
+
+#: src/resource/ui/menubar.xml.h:29
+msgid "Add(_A)"
+msgstr "追加(_A)"
+
+#: src/resource/ui/menubar.xml.h:30
+msgid "Remove(_R)"
+msgstr "削除(_R)"
+
+#: src/resource/ui/menubar.xml.h:31
+msgid "Option(_O)"
+msgstr "オプション(_O)"
+
+#: src/resource/ui/menubar.xml.h:32
+msgid "Encoding(_E)"
+msgstr "文字コード(_E)"
+
+#: src/resource/ui/menubar.xml.h:33
+msgid "Font(_F)"
+msgstr "フォント(_F)"
+
+#: src/resource/ui/menubar.xml.h:34
+msgid "Show Toolbar(_S)"
+msgstr "ツールバーを表示する(_S)"
+
+#: src/resource/ui/menubar.xml.h:35
+msgid "Tab Width(_T)"
+msgstr "タブ幅の変更(_T)"
+
+#: src/resource/ui/menubar.xml.h:36
+msgid "Flymake(_M)"
+msgstr "Flymakeの設定(_M)"
+
+#: src/resource/ui/menubar.xml.h:37
+msgid "Wrap Text"
+msgstr "右端で折り返す"
+
+#: src/resource/ui/menubar.xml.h:38
+msgid "Show Line Numbers"
+msgstr "行番号を表示する"
+
+#: src/resource/ui/menubar.xml.h:39
+msgid "Auto Indent"
+msgstr "自動でインデントする"
+
+#: src/resource/ui/menubar.xml.h:40
+msgid "Highlight Current Line"
+msgstr "カーソルの行を強調表示する"
+
+#: src/resource/ui/menubar.xml.h:41
+msgid "Spaces instead of Tabs"
+msgstr "タブの代わりにスペースを挿入する"
+
+#: src/resource/ui/menubar.xml.h:42
+msgid "Hungry Delete"
+msgstr "空白をまとめて消去する"
+
+#: src/resource/ui/menubar.xml.h:43
+msgid "Help(_H)"
+msgstr "ヘルプ(_H)"
+
+#: src/resource/ui/menubar.xml.h:44
+msgid "Version Info(_V)"
+msgstr "ヴァージョン情報(_V)"
+
+#: src/resource/ui/toolbar.xml.h:1
+msgid "Create a new file"
+msgstr "ファイルを新規作成する"
+
+#: src/resource/ui/toolbar.xml.h:2
+msgid "Open a file"
+msgstr "ファイルを開く"
+
+#: src/resource/ui/toolbar.xml.h:3
+msgid "Reload a file"
+msgstr "ファイルを再読み込みする"
+
+#: src/resource/ui/toolbar.xml.h:4
+msgid "Save a file"
+msgstr "ファイルを上書き保存する"
+
+#: src/resource/ui/toolbar.xml.h:5
+msgid "Save as a new file"
+msgstr "ファイルを名前をつけて保存する"
+
+#: src/resource/ui/toolbar.xml.h:6
+msgid "Print a file"
+msgstr "ファイルを印刷する"
+
+#: src/resource/ui/toolbar.xml.h:7
+msgid "Undo an operation"
+msgstr "元に戻す"
+
+#: src/resource/ui/toolbar.xml.h:8
+msgid "Redo an operation"
+msgstr "やり直す"
+
+#: src/resource/ui/toolbar.xml.h:9
+msgid "Cut text and copy to clipboard"
+msgstr "切り取る"
+
+#: src/resource/ui/toolbar.xml.h:10
+msgid "Copy text to clipboard"
+msgstr "コピーする"
+
+#: src/resource/ui/toolbar.xml.h:11
+msgid "Paste text from clipboard"
+msgstr "貼り付ける"
+
+#: src/resource/ui/toolbar.xml.h:12
+msgid "Find a string"
+msgstr "文字列を検索する"
+
+#: src/resource/ui/toolbar.xml.h:13
+msgid "Find and replace a string"
+msgstr "文字列を置換する"
+
+#: src/resource/ui/toolbar.xml.h:14
+msgid "Call library"
+msgstr "ライブラリを呼び出す"

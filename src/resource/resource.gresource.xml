@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gresources>
+  <gresource prefix="/resource">
+    <file preprocess="to-pixdata" compressed="true" alias="icon.png">src/resource/icon/icon.png</file>
+    <file preprocess="xml-stripblanks" compressed="true" alias="menubar.xml">src/resource/ui/menubar.xml</file>
+    <file preprocess="xml-stripblanks" compressed="true" alias="toolbar.xml">src/resource/ui/toolbar.xml</file>
+    <file preprocess="xml-stripblanks" compressed="true" alias="popup.xml">src/resource/ui/popup.xml</file>
+  </gresource>
+</gresources>

@@ -1,0 +1,14 @@
+char *s = N_("Create a new file");
+char *s = N_("Open a file");
+char *s = N_("Reload a file");
+char *s = N_("Save a file");
+char *s = N_("Save as a new file");
+char *s = N_("Print a file");
+char *s = N_("Undo an operation");
+char *s = N_("Redo an operation");
+char *s = N_("Cut text and copy to clipboard");
+char *s = N_("Copy text to clipboard");
+char *s = N_("Paste text from clipboard");
+char *s = N_("Find a string");
+char *s = N_("Find and replace a string");
+char *s = N_("Call library");
