@@ -1,13 +1,14 @@
 VERSION = 1.0.0
 
 COMPILER = g++
+BINDIR = bin
 OBJDIR = obj
 SRCDIR = src
 UIDIR = $(SRCDIR)/resource/ui
 TESTDIR = test
 GTESTDIR = $(TESTDIR)/resource/gtest
 
-TARGET = bin/cedit
+TARGET = ${BINDIR}/cedit
 CFLAGS = `pkg-config gtkmm-3.0 gtksourceviewmm-3.0 --cflags` -std=c++14 -O3 -MMD -MP -DVERSION=\"$(VERSION)\"
 LDFLAGS = `pkg-config gtkmm-3.0 gtksourceviewmm-3.0 --libs`
 ifeq ($(OS),Windows_NT)
@@ -25,7 +26,7 @@ POT = share/locale/cedit++.pot
 PO = share/locale/ja_JP/LC_MESSAGES/ja.po
 MO = share/locale/ja_JP/LC_MESSAGES/cedit++.mo
 
-TEST_TARGET = bin/test
+TEST_TARGET = ${BINDIR}/test
 TEST_CFLAGS = $(CFLAGS) -pthread
 TEST_LDFLAGS = $(LDFLAGS) -lpthread -lm
 TEST_INCLUDE = $(INCLUDE) -isystem $(TESTDIR)/resource/gtest/include
@@ -46,7 +47,7 @@ mo : $(PO)
 	msgfmt --output-file=$(MO) $(PO)
 
 test : $(TEST_TARGET)
-	./bin/test --gtest_color=yes 2>/dev/null
+	./${BINDIR}/test --gtest_color=yes 2>/dev/null
 
 install :
 	cp $(TARGET) /usr/local/bin/
@@ -56,12 +57,13 @@ installer :
 	cd windows && ./make_installer.sh $(VERSION)
 
 clean :
-	rm -rf $(OBJDIR) $(TARGET) $(TEST_TARGET)
+	rm -rf $(BINDIR) $(OBJDIR)
 
 clean-all :
-	rm -rf $(OBJDIR) $(TARGET) $(TEST_TARGET) $(GTESTDIR)/lib
+	rm -rf $(BINDIR) $(OBJDIR) $(GTESTDIR)/lib
 
 $(TARGET) : $(OBJECTS)
+	@mkdir -p `dirname $@`
 	$(COMPILER) -o $@ $^ $(LDFLAGS)
 
 $(OBJDIR)/$(SRCDIR)/%.o : $(SRCDIR)/%.cpp
@@ -77,6 +79,7 @@ $(UIDIR)/%.h : $(UIDIR)/%
 	intltool-extract --type=gettext/glade $^
 
 $(TEST_TARGET) : $(filter-out $(OBJDIR)/$(SRCDIR)/cedit/cedit.o, $(OBJECTS)) $(TEST_OBJECTS) $(TEST_LIB)
+	@mkdir -p `dirname $@`
 	$(COMPILER) -o $@ $^ $(TEST_LDFLAGS)
 
 $(OBJDIR)/$(TESTDIR)/%.o : $(TESTDIR)/%.cpp
