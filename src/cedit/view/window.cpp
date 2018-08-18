@@ -258,6 +258,8 @@ namespace view {
             setting.set_integer(io::setting::POSITION_X, x);
             setting.set_integer(io::setting::POSITION_Y, y);
             
+            setting.save();
+            
             return false;
         } else {
             return true;
