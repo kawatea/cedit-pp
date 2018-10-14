@@ -80,7 +80,7 @@ namespace function {
         security_attributes.nLength = sizeof(SECURITY_ATTRIBUTES);
         security_attributes.lpSecurityDescriptor = NULL;
         security_attributes.bInheritHandle = true;
-        if (!CreatePipe(&read, &write, &security_attributes, 0)) return "";
+        if (!CreatePipe(&read, &write, &security_attributes, 1 << 16)) return "";
         
         do {
             STARTUPINFO startup_info = {};
