@@ -22,6 +22,7 @@ cp /mingw64/bin/libcairo-2.dll ${source_dir}/bin
 cp /mingw64/bin/libcairo-gobject-2.dll ${source_dir}/bin
 cp /mingw64/bin/libcairomm-1.0-1.dll ${source_dir}/bin
 cp /mingw64/bin/libcroco-0.6-3.dll ${source_dir}/bin
+cp /mingw64/bin/libdatrie-1.dll ${source_dir}/bin
 cp /mingw64/bin/libepoxy-0.dll ${source_dir}/bin
 cp /mingw64/bin/libexpat-1.dll ${source_dir}/bin
 cp /mingw64/bin/libffi-6.dll ${source_dir}/bin
@@ -58,6 +59,7 @@ cp /mingw64/bin/libpng16-16.dll ${source_dir}/bin
 cp /mingw64/bin/librsvg-2-2.dll ${source_dir}/bin
 cp /mingw64/bin/libsigc-2.0-0.dll ${source_dir}/bin
 cp /mingw64/bin/libstdc++-6.dll ${source_dir}/bin
+cp /mingw64/bin/libthai-0.dll ${source_dir}/bin
 cp /mingw64/bin/libwinpthread-1.dll ${source_dir}/bin
 cp /mingw64/bin/libxml2-2.dll ${source_dir}/bin
 cp /mingw64/bin/zlib1.dll ${source_dir}/bin
