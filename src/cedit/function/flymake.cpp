@@ -35,8 +35,12 @@ namespace function {
         std::istringstream stream(read_output(filename, language));
         std::string line;
         while (std::getline(stream, line)) {
-            const std::string::size_type pos = line.find(':');
-            if (pos == std::string::npos || line.substr(0, pos) != filename) continue;
+            std::string::size_type pos = -1;
+            while (true) {
+                pos = line.find(':', pos + 1);
+                if (pos == std::string::npos || line.substr(0, pos) == filename) break;
+            }
+            if (pos == std::string::npos) continue;
             line = line.substr(pos + 1);
             try {
                 const int line_num = std::stoi(line) - 1;
