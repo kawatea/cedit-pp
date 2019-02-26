@@ -19,6 +19,7 @@
 #include <vector>
 #include <gdkmm/pixbuf.h>
 #include <giomm/menu.h>
+#include <glibmm/convert.h>
 #include <glibmm/ustring.h>
 #include <gtkmm/application.h>
 #include <gtkmm/builder.h>
@@ -227,7 +228,7 @@ namespace view {
             if (file->get_encoding() == io::encoding::NONE) file->set_encoding(io::encoding::UTF8);
             buffer->set_text("");
         } else {
-            if (file->get_encoding() == io::encoding::NONE) file->set_encoding(io::detect_encoding(file->get_full_name()));
+            if (file->get_encoding() == io::encoding::NONE) file->set_encoding(io::detect_encoding(Glib::locale_from_utf8(file->get_full_name())));
             buffer->set_text(file->read());
         }
         action_encoding->change_state(Glib::ustring(file->get_encoding().get_name()));
@@ -377,7 +378,7 @@ namespace view {
         } else {
             file->write(buffer->get_text());
             update_edited(false);
-            flymake.apply(buffer, file->get_full_name(), language);
+            flymake.apply(buffer, Glib::locale_from_utf8(file->get_full_name()), language);
         }
     }
     

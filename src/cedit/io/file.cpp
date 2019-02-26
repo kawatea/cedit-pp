@@ -18,6 +18,7 @@
 #include <sys/stat.h>
 #include <unistd.h>
 #include <string>
+#include <glib/gstdio.h>
 #include <glibmm/iochannel.h>
 #include <glibmm/refptr.h>
 #include <glibmm/ustring.h>
@@ -67,12 +68,12 @@ namespace io {
     }
     
     bool file::exists() const {
-        return access(full_name.c_str(), F_OK) == 0;
+        return g_access(full_name.c_str(), F_OK) == 0;
     }
     
     bool file::can_open() const {
-        struct stat st;
-        if (stat(full_name.c_str(), &st) != 0) {
+        GStatBuf st;
+        if (g_stat(full_name.c_str(), &st) != 0) {
             return !simple_name.empty();
         } else {
             return S_ISREG(st.st_mode);

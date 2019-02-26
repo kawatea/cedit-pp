@@ -19,6 +19,7 @@
 #include <memory>
 #include <string>
 #include <utility>
+#include <glibmm/convert.h>
 #include <gtkmm/application.h>
 #include <gtksourceviewmm/init.h>
 #include "io/encoding.h"
@@ -40,7 +41,7 @@ int main(int argc, char** argv) {
     
     parser.parse(argc, argv);
     
-    std::unique_ptr<io::file> file = std::make_unique<io::file>(parser.get_positional_argument<std::string>(), parser.get<io::encoding>('e'));
+    std::unique_ptr<io::file> file = std::make_unique<io::file>(Glib::locale_to_utf8(parser.get_positional_argument<std::string>()), parser.get<io::encoding>('e'));
     if (!file->is_empty() && !file->can_open()) {
         std::cerr << "can't open a file" << std::endl;
         return EXIT_FAILURE;
