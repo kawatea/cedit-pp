@@ -78,6 +78,10 @@ namespace view {
         if (!in_process) buffer->remove_tag(match_tag, buffer->begin(), buffer->end());
     }
     
+    bool search_bar::has_focus() const {
+        return find_entry.has_focus() || replace_entry.has_focus();
+    }
+    
     bool search_bar::on_key_press_event(GdkEventKey* event) {
         switch (event->keyval) {
             case GDK_KEY_Escape: on_close(); return true;
@@ -94,6 +98,22 @@ namespace view {
             case GDK_KEY_ISO_Left_Tab: switch_entry(find); return true;
             case GDK_KEY_Escape: on_close(); return true;
             default: return false;
+        }
+    }
+    
+    void search_bar::on_edit_paste() {
+        if (find_entry.has_focus()) {
+            find_entry.paste_clipboard();
+        } else {
+            replace_entry.paste_clipboard();
+        }
+    }
+    
+    void search_bar::on_edit_select_all() {
+        if (find_entry.has_focus()) {
+            find_entry.select_region(0, -1);
+        } else {
+            replace_entry.select_region(0, -1);
         }
     }
     

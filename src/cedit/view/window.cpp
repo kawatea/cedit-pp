@@ -324,7 +324,7 @@ namespace view {
             add_action("edit_delete", sigc::mem_fun(*this, &window::on_edit_delete));
         } else {
             remove_action("edit_cut");
-            remove_action("edit_coyp");
+            remove_action("edit_copy");
             remove_action("edit_delete");
         }
     }
@@ -418,7 +418,11 @@ namespace view {
     }
     
     void window::on_edit_paste() {
-        buffer->paste_clipboard(Gtk::Clipboard::get());
+        if (search_bar.has_focus()) {
+            search_bar.on_edit_paste();
+        } else {
+            buffer->paste_clipboard(Gtk::Clipboard::get());
+        }
     }
     
     void window::on_edit_delete() {
@@ -430,7 +434,11 @@ namespace view {
     }
     
     void window::on_edit_select_all() {
-        buffer->select_range(buffer->begin(), buffer->end());
+        if (search_bar.has_focus()) {
+            search_bar.on_edit_select_all();
+        } else {
+            buffer->select_range(buffer->begin(), buffer->end());
+        }
     }
     
     void window::on_search_find() {

@@ -36,6 +36,9 @@ namespace view {
         void open_find();
         void open_replace();
         void remove_tags();
+        bool has_focus() const;
+        void on_edit_paste();
+        void on_edit_select_all();
         
         protected:
         bool on_key_press_event(GdkEventKey* event) override;
