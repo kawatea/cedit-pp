@@ -229,30 +229,15 @@ namespace view {
     }
     
     bool search_bar::replace(const Glib::ustring& old_text, const Glib::ustring& new_text) {
-        Gtk::TextIter now;
-        Glib::RefPtr<Gtk::TextMark> limit;
+        Gtk::TextIter now = buffer->get_iter_at_mark(buffer->get_insert());
         const Gtk::TextSearchFlags flags = (case_button.get_active() ? Gtk::TextSearchFlags() : Gtk::TEXT_SEARCH_CASE_INSENSITIVE);
         bool match = false;
-        
-        if (buffer->get_has_selection()) {
-            const Glib::RefPtr<Gtk::TextMark> insert = buffer->get_insert();
-            const Glib::RefPtr<Gtk::TextMark> selection_bound = buffer->get_selection_bound();
-            if (insert->get_iter() < selection_bound->get_iter()) {
-                now = insert->get_iter();
-                limit = selection_bound;
-            } else {
-                now = selection_bound->get_iter();
-                limit = insert;
-            }
-        } else {
-            now = buffer->get_iter_at_mark(buffer->get_insert());
-        }
         
         buffer->remove_tag(match_tag, buffer->begin(), buffer->end());
         buffer->begin_user_action();
         while (true) {
             Gtk::TextIter start, end;
-            if (!now.forward_search(old_text, flags, start, end, limit ? limit->get_iter() : buffer->end())) break;
+            if (!now.forward_search(old_text, flags, start, end)) break;
             now = buffer->erase(start, end);
             start = end = now = buffer->insert(now, new_text);
             start.backward_chars(new_text.size());
