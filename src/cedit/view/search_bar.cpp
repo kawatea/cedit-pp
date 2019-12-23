@@ -40,6 +40,9 @@ namespace view {
         provider->load_from_data(".unmatch { background-color: #FFB6C1; }");
         find_entry.get_style_context()->add_provider(provider, GTK_STYLE_PROVIDER_PRIORITY_APPLICATION);
         
+        find_entry.set_icon_from_icon_name("edit-find");
+        replace_entry.set_icon_from_icon_name("edit-find-replace");
+        
         find_box.pack_start(find_entry);
         find_box.pack_start(case_button, Gtk::PACK_SHRINK);
         find_box.pack_start(control_button, Gtk::PACK_SHRINK);
