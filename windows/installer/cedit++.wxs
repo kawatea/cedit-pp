@@ -16,6 +16,9 @@
         
         <Feature Id="ceditpp" Title="ceditpp" Level="1">
             <ComponentGroupRef Id="binaries"/>
+        </Feature>
+        
+        <Feature Id="ceditpp_keep" Title="ceditpp_keep" Level="1">
             <ComponentRef Id="setting"/>
             <ComponentRef Id="library"/>
             <ComponentRef Id="desktop_shortcut"/>
@@ -32,16 +35,17 @@
         <CustomAction Id="UpdatePixbufLoaders" BinaryKey="WixCA" DllEntry="CAQuietExec" Return="ignore" Execute="deferred" Impersonate="no"/>
         
         <InstallExecuteSequence>
-            <RemoveExistingProducts Before="InstallInitialize"/>
-            <Custom Action="SetCompileSchemasCommand" After="InstallFiles">Not Installed</Custom>
-            <Custom Action="CompileSchemas" After="SetCompileSchemasCommand">Not Installed</Custom>
-            <Custom Action="SetUpdateHicolorIconCacheCommand" After="CompileSchemas">Not Installed</Custom>
-            <Custom Action="UpdateHicolorIconCache" After="SetUpdateHicolorIconCacheCommand">Not Installed</Custom>
-            <Custom Action="SetUpdateAdwaitaIconCacheCommand" After="UpdateHicolorIconCache">Not Installed</Custom>
-            <Custom Action="UpdateAdwaitaIconCache" After="SetUpdateAdwaitaIconCacheCommand">Not Installed</Custom>
-            <Custom Action="SetUpdatePixbufLoadersCommand" After="UpdateAdwaitaIconCache">Not Installed</Custom>
-            <Custom Action="UpdatePixbufLoaders" After="SetUpdatePixbufLoadersCommand">Not Installed</Custom>
+            <Custom Action="SetCompileSchemasCommand" After="InstallFiles"/>
+            <Custom Action="CompileSchemas" After="SetCompileSchemasCommand"/>
+            <Custom Action="SetUpdateHicolorIconCacheCommand" After="CompileSchemas"/>
+            <Custom Action="UpdateHicolorIconCache" After="SetUpdateHicolorIconCacheCommand"/>
+            <Custom Action="SetUpdateAdwaitaIconCacheCommand" After="UpdateHicolorIconCache"/>
+            <Custom Action="UpdateAdwaitaIconCache" After="SetUpdateAdwaitaIconCacheCommand"/>
+            <Custom Action="SetUpdatePixbufLoadersCommand" After="UpdateAdwaitaIconCache"/>
+            <Custom Action="UpdatePixbufLoaders" After="SetUpdatePixbufLoadersCommand"/>
         </InstallExecuteSequence>
+        
+        <MajorUpgrade Schedule="afterInstallInitialize" RemoveFeatures="ceditpp" DowngradeErrorMessage="[ProductName] の新しいバージョンが既にインストールされています"/>
     </Product>
     
     <Fragment>
@@ -60,7 +64,7 @@
     <Fragment>
         <DirectoryRef Id="resource">
             <Directory Id="setting" Name="setting">
-                <Component Id="setting" Guid="*">
+                <Component Id="setting" Guid="*" NeverOverwrite="yes">
                     <CreateFolder>
                         <util:PermissionEx User="Users" GenericAll="yes"/>
                     </CreateFolder>
@@ -69,20 +73,20 @@
             </Directory>
         </DirectoryRef>
         
-        <Component Id="library" Directory="library" Guid="*">
+        <Component Id="library" Directory="library" Guid="*" NeverOverwrite="yes">
             <CreateFolder>
                 <util:PermissionEx User="Users" GenericAll="yes"/>
             </CreateFolder>
             <RegistryValue Root="HKCU" Key="Software/cedit++" Name="library" Type="integer" Value="1" KeyPath="yes"/>
         </Component>
         
-        <Component Id="desktop_shortcut" Directory="DesktopFolder" Guid="*">
+        <Component Id="desktop_shortcut" Directory="DesktopFolder" Guid="*" NeverOverwrite="yes">
             <Shortcut Id="shortcut" Name="cedit++" Icon="icon" IconIndex="0" WorkingDirectory="INSTALLDIR" Target="[INSTALLDIR]bin/cedit.exe"/>
             <RemoveFolder Id="DesktopFolder" On="uninstall"/>
             <RegistryValue Root="HKCU" Key="Software/cedit++" Name="shortcut" Type="integer" Value="1" KeyPath="yes"/>
         </Component>
         
-        <Component Id="environment" Directory="INSTALLDIR" Guid="*">
+        <Component Id="environment" Directory="INSTALLDIR" Guid="*" NeverOverwrite="yes">
             <Environment Id="CEDITPP_DIR" Name="CEDITPP_DIR" Action="set" Part="all" Permanent="no" System="yes" Value="[INSTALLDIR]"/>
             <Environment Id="Path" Name="Path" Action="set" Part="last" Permanent="no" System="yes" Value="[INSTALLDIR]bin" />
             <RegistryValue Root="HKCU" Key="Software/cedit++" Name="environment" Type="integer" Value="1" KeyPath="yes"/>

@@ -70,7 +70,7 @@ cp -r /mingw64/lib/gdk-pixbuf-2.0 ${source_dir}/lib
 cp -r /mingw64/share/glib-2.0 ${source_dir}/share
 cp -r /mingw64/share/icons ${source_dir}/share
 cp /mingw64/share/locale/ja/LC_MESSAGES/atk10.mo ${source_dir}/share/locale/ja_JP/LC_MESSAGES
-cp /mingw64/share/locale/ja/LC_MESSAGES/libpeas.mo ${source_dir}/share/locale/ja_JP/LC_MESSAGES
+cp /mingw64/share/locale/ja/LC_MESSAGES/libpeas-1.0.mo ${source_dir}/share/locale/ja_JP/LC_MESSAGES
 cp /mingw64/share/locale/ja/LC_MESSAGES/gsettings-desktop-schemas.mo ${source_dir}/share/locale/ja_JP/LC_MESSAGES
 cp /mingw64/share/locale/ja/LC_MESSAGES/json-glib-1.0.mo ${source_dir}/share/locale/ja_JP/LC_MESSAGES
 cp /mingw64/share/locale/ja/LC_MESSAGES/glib20.mo ${source_dir}/share/locale/ja_JP/LC_MESSAGES
