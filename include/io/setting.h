@@ -78,9 +78,13 @@ namespace io {
         std::map<Glib::ustring, std::vector<Glib::ustring>> get_accelerators() const;
         void set_accelerators(const std::map<Glib::ustring, std::vector<Glib::ustring>>& accelerators);
         
+        std::vector<std::pair<Glib::ustring, Glib::ustring>> get_macros() const;
+        void set_macros(const std::vector<std::pair<Glib::ustring, Glib::ustring>>& macros);
+        
         private:
         static const Glib::ustring GENERAL;
         static const Glib::ustring ACCELERATOR;
+        static const Glib::ustring MACRO;
         
         static std::unique_ptr<setting> instance;
         

@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: cedit++ 1.0.0\n"
+"Project-Id-Version: cedit++ 1.1.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-08-15 21:44+0900\n"
+"POT-Creation-Date: 2019-12-27 17:19+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=CHARSET\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: src/cedit/io/file.cpp:45
+#: src/cedit/io/file.cpp:46
 msgid "Untitled"
 msgstr ""
 
@@ -25,7 +25,7 @@ msgstr ""
 msgid "User-friendly source code editor"
 msgstr ""
 
-#: src/cedit/view/file_chooser_dialog.cpp:23
+#: src/cedit/view/file_chooser_dialog.cpp:23 src/cedit/view/macro_dialog.cpp:74
 #: src/cedit/view/save_check_dialog.cpp:24
 msgid "Cancel"
 msgstr ""
@@ -55,12 +55,41 @@ msgstr ""
 msgid "Do you overwrite an existing library?"
 msgstr ""
 
-#: src/cedit/view/save_check_dialog.cpp:21
-msgid "Do you want to save changes?"
+#: src/cedit/view/macro_dialog.cpp:30
+msgid "Macro"
 msgstr ""
 
-#: src/cedit/view/save_check_dialog.cpp:22 src/cedit/view/window.cpp:383
+#: src/cedit/view/macro_dialog.cpp:30
+msgid "Before expansion: "
+msgstr ""
+
+#: src/cedit/view/macro_dialog.cpp:30
+msgid "After expansion: "
+msgstr ""
+
+#: src/cedit/view/macro_dialog.cpp:38
+msgid "Before expansion"
+msgstr ""
+
+#: src/cedit/view/macro_dialog.cpp:45
+msgid "After expansion"
+msgstr ""
+
+#: src/cedit/view/macro_dialog.cpp:71
+msgid "Create"
+msgstr ""
+
+#: src/cedit/view/macro_dialog.cpp:72
+msgid "Remove"
+msgstr ""
+
+#: src/cedit/view/macro_dialog.cpp:73 src/cedit/view/save_check_dialog.cpp:22
+#: src/cedit/view/window.cpp:391
 msgid "Save"
+msgstr ""
+
+#: src/cedit/view/save_check_dialog.cpp:21
+msgid "Do you want to save changes?"
 msgstr ""
 
 #: src/cedit/view/save_check_dialog.cpp:23
@@ -79,35 +108,35 @@ msgstr ""
 msgid "Interactive"
 msgstr ""
 
-#: src/cedit/view/window.cpp:355
+#: src/cedit/view/window.cpp:363
 msgid "Open"
 msgstr ""
 
-#: src/cedit/view/window.cpp:383
+#: src/cedit/view/window.cpp:391
 msgid "Save As"
 msgstr ""
 
-#: src/cedit/view/window.cpp:442
+#: src/cedit/view/window.cpp:458
 msgid "Move to Line"
 msgstr ""
 
-#: src/cedit/view/window.cpp:442
+#: src/cedit/view/window.cpp:458
 msgid "Line Number: "
 msgstr ""
 
-#: src/cedit/view/window.cpp:478
+#: src/cedit/view/window.cpp:494
 msgid "Library Call"
 msgstr ""
 
-#: src/cedit/view/window.cpp:496
+#: src/cedit/view/window.cpp:512
 msgid "Library Remove"
 msgstr ""
 
-#: src/cedit/view/window.cpp:527
+#: src/cedit/view/window.cpp:548
 msgid "Tab Width"
 msgstr ""
 
-#: src/cedit/view/window.cpp:527
+#: src/cedit/view/window.cpp:548
 msgid "New Tab Width: "
 msgstr ""
 
@@ -192,7 +221,7 @@ msgid "Replace(_R)"
 msgstr ""
 
 #: src/resource/ui/menubar.xml.h:21
-msgid "Move(_M)"
+msgid "Move(_J)"
 msgstr ""
 
 #: src/resource/ui/menubar.xml.h:22
@@ -232,58 +261,66 @@ msgid "Remove(_R)"
 msgstr ""
 
 #: src/resource/ui/menubar.xml.h:31
-msgid "Option(_O)"
+msgid "Macro(_M)"
 msgstr ""
 
 #: src/resource/ui/menubar.xml.h:32
-msgid "Encoding(_E)"
+msgid "Setting(_S)"
 msgstr ""
 
 #: src/resource/ui/menubar.xml.h:33
-msgid "Font(_F)"
+msgid "Option(_O)"
 msgstr ""
 
 #: src/resource/ui/menubar.xml.h:34
-msgid "Show Toolbar(_S)"
+msgid "Encoding(_E)"
 msgstr ""
 
 #: src/resource/ui/menubar.xml.h:35
-msgid "Tab Width(_T)"
+msgid "Font(_F)"
 msgstr ""
 
 #: src/resource/ui/menubar.xml.h:36
-msgid "Flymake(_M)"
+msgid "Show Toolbar(_S)"
 msgstr ""
 
 #: src/resource/ui/menubar.xml.h:37
-msgid "Wrap Text"
+msgid "Tab Width(_T)"
 msgstr ""
 
 #: src/resource/ui/menubar.xml.h:38
-msgid "Show Line Numbers"
+msgid "Flymake(_M)"
 msgstr ""
 
 #: src/resource/ui/menubar.xml.h:39
-msgid "Auto Indent"
+msgid "Wrap Text"
 msgstr ""
 
 #: src/resource/ui/menubar.xml.h:40
-msgid "Highlight Current Line"
+msgid "Show Line Numbers"
 msgstr ""
 
 #: src/resource/ui/menubar.xml.h:41
-msgid "Spaces instead of Tabs"
+msgid "Auto Indent"
 msgstr ""
 
 #: src/resource/ui/menubar.xml.h:42
-msgid "Hungry Delete"
+msgid "Highlight Current Line"
 msgstr ""
 
 #: src/resource/ui/menubar.xml.h:43
-msgid "Help(_H)"
+msgid "Spaces instead of Tabs"
 msgstr ""
 
 #: src/resource/ui/menubar.xml.h:44
+msgid "Hungry Delete"
+msgstr ""
+
+#: src/resource/ui/menubar.xml.h:45
+msgid "Help(_H)"
+msgstr ""
+
+#: src/resource/ui/menubar.xml.h:46
 msgid "Version Info(_V)"
 msgstr ""
 

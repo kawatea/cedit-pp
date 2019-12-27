@@ -35,4 +35,5 @@ win.move_bottom=<Control>Down
 win.move_left=<Control>Left
 win.move_right=<Control>Right
 win.library_call=<Control>l
+win.macro_setting=<Control>m
 win.help_version_info=F1

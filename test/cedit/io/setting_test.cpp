@@ -161,3 +161,49 @@ TEST(setting, test_accelerators) {
     std::remove(name.c_str());
     rmdir(dir.c_str());
 }
+
+TEST(setting, test_macros) {
+    const std::string dir = "tmp/";
+    const std::string name = dir + "setting";
+    
+    #ifdef _WIN32
+    #define mkdir(path, mode) mkdir(path)
+    #endif
+    mkdir(dir.c_str(), ACCESSPERMS);
+    io::file(name).write("");
+    io::setting::create(name);
+    io::setting& setting = io::setting::get();
+    
+    {
+        const std::vector<std::pair<Glib::ustring, Glib::ustring>> macros = setting.get_macros();
+        EXPECT_EQ(0, macros.size());
+    }
+    
+    {
+        setting.set_macros({{"key1", "value1"}, {"key2", "value2"}, {"key3", "value3"}});
+        const std::vector<std::pair<Glib::ustring, Glib::ustring>> macros = setting.get_macros();
+        EXPECT_EQ(3, macros.size());
+        EXPECT_EQ("key1", macros.at(0).first);
+        EXPECT_EQ("value1", macros.at(0).second);
+        EXPECT_EQ("key2", macros.at(1).first);
+        EXPECT_EQ("value2", macros.at(1).second);
+        EXPECT_EQ("key3", macros.at(2).first);
+        EXPECT_EQ("value3", macros.at(2).second);
+    }
+    
+    {
+        setting.set_macros({{"key2", ""}, {"key1", "value1"}, {"key4", "a; b; c;"}});
+        const std::vector<std::pair<Glib::ustring, Glib::ustring>> macros = setting.get_macros();
+        EXPECT_EQ(3, macros.size());
+        EXPECT_EQ("key2", macros.at(0).first);
+        EXPECT_EQ("", macros.at(0).second);
+        EXPECT_EQ("key1", macros.at(1).first);
+        EXPECT_EQ("value1", macros.at(1).second);
+        EXPECT_EQ("key4", macros.at(2).first);
+        EXPECT_EQ("a; b; c;", macros.at(2).second);
+    }
+    
+    io::setting::destroy();
+    std::remove(name.c_str());
+    rmdir(dir.c_str());
+}

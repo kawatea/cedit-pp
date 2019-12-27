@@ -47,6 +47,7 @@ namespace io {
     
     const Glib::ustring setting::GENERAL = "General";
     const Glib::ustring setting::ACCELERATOR = "Accelerator";
+    const Glib::ustring setting::MACRO = "Macro";
     
     std::unique_ptr<setting> setting::instance;
     
@@ -149,6 +150,20 @@ namespace io {
     
     void setting::set_accelerators(const std::map<Glib::ustring, std::vector<Glib::ustring>>& accelerators) {
         for (const std::pair<Glib::ustring, std::vector<Glib::ustring>>& accelerator : accelerators) key_file.set_string_list(ACCELERATOR, accelerator.first, accelerator.second);
+        save();
+    }
+    
+    std::vector<std::pair<Glib::ustring, Glib::ustring>> setting::get_macros() const {
+        std::vector<std::pair<Glib::ustring, Glib::ustring>> macros;
+        if (key_file.has_group(MACRO)) {
+            for (const Glib::ustring& key : key_file.get_keys(MACRO)) macros.emplace_back(key, key_file.get_string(MACRO, key));
+        }
+        return macros;
+    }
+    
+    void setting::set_macros(const std::vector<std::pair<Glib::ustring, Glib::ustring>>& macros) {
+        if (key_file.has_group(MACRO)) key_file.remove_group(MACRO);
+        for (const std::pair<Glib::ustring, Glib::ustring>& macro : macros) key_file.set_string(MACRO, macro.first, macro.second);
         save();
     }
 }

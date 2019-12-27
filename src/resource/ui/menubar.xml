@@ -112,7 +112,7 @@
       </section>
     </submenu>
     <submenu>
-      <attribute name="label" translatable="yes">Move(_M)</attribute>
+      <attribute name="label" translatable="yes">Move(_J)</attribute>
       <section>
         <item>
           <attribute name="label" translatable="yes">Move to Line(_J)</attribute>
@@ -158,6 +158,16 @@
           <attribute name="label" translatable="yes">Remove(_R)</attribute>
           <attribute name="icon">list-remove</attribute>
           <attribute name="action">win.library_remove</attribute>
+        </item>
+      </section>
+    </submenu>
+    <submenu>
+      <attribute name="label" translatable="yes">Macro(_M)</attribute>
+      <section>
+        <item>
+          <attribute name="label" translatable="yes">Setting(_S)</attribute>
+          <attribute name="icon">media-record</attribute>
+          <attribute name="action">win.macro_setting</attribute>
         </item>
       </section>
     </submenu>

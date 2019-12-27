@@ -85,6 +85,8 @@ namespace view {
         void on_library_add();
         void on_library_remove();
         
+        void on_macro_setting();
+        
         void on_option_encoding(const Glib::ustring& encoding);
         void on_option_font();
         void on_option_show_toolbar();
