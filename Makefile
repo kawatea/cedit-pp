@@ -53,7 +53,7 @@ install :
 	cp $(TARGET) /usr/local/bin/
 	mkdir -p $(HOME)/.cedit++/library
 	mkdir -p $(HOME)/.cedit++/src
-	cp -rn ./share $(HOME)/.cedit++
+	cp -rf ./share $(HOME)/.cedit++
 	cp -rn ./src/resource $(HOME)/.cedit++/src
 
 installer :
