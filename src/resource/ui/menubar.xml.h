@@ -30,6 +30,7 @@ char *s = N_("Add(_A)");
 char *s = N_("Remove(_R)");
 char *s = N_("Macro(_M)");
 char *s = N_("Setting(_S)");
+char *s = N_("Expand(_E)");
 char *s = N_("Option(_O)");
 char *s = N_("Encoding(_E)");
 char *s = N_("Font(_F)");

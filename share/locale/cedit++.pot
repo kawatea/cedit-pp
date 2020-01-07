@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: cedit++ 1.1.0\n"
+"Project-Id-Version: cedit++ 1.1.1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-12-27 17:19+0900\n"
+"POT-Creation-Date: 2020-01-07 22:52+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -25,7 +25,7 @@ msgstr ""
 msgid "User-friendly source code editor"
 msgstr ""
 
-#: src/cedit/view/file_chooser_dialog.cpp:23 src/cedit/view/macro_dialog.cpp:74
+#: src/cedit/view/file_chooser_dialog.cpp:23 src/cedit/view/macro_dialog.cpp:70
 #: src/cedit/view/save_check_dialog.cpp:24
 msgid "Cancel"
 msgstr ""
@@ -55,15 +55,15 @@ msgstr ""
 msgid "Do you overwrite an existing library?"
 msgstr ""
 
-#: src/cedit/view/macro_dialog.cpp:30
+#: src/cedit/view/macro_dialog.cpp:28
 msgid "Macro"
 msgstr ""
 
-#: src/cedit/view/macro_dialog.cpp:30
+#: src/cedit/view/macro_dialog.cpp:28
 msgid "Before expansion: "
 msgstr ""
 
-#: src/cedit/view/macro_dialog.cpp:30
+#: src/cedit/view/macro_dialog.cpp:28
 msgid "After expansion: "
 msgstr ""
 
@@ -75,15 +75,15 @@ msgstr ""
 msgid "After expansion"
 msgstr ""
 
-#: src/cedit/view/macro_dialog.cpp:71
+#: src/cedit/view/macro_dialog.cpp:67
 msgid "Create"
 msgstr ""
 
-#: src/cedit/view/macro_dialog.cpp:72
+#: src/cedit/view/macro_dialog.cpp:68
 msgid "Remove"
 msgstr ""
 
-#: src/cedit/view/macro_dialog.cpp:73 src/cedit/view/save_check_dialog.cpp:22
+#: src/cedit/view/macro_dialog.cpp:69 src/cedit/view/save_check_dialog.cpp:22
 #: src/cedit/view/window.cpp:391
 msgid "Save"
 msgstr ""
@@ -132,11 +132,11 @@ msgstr ""
 msgid "Library Remove"
 msgstr ""
 
-#: src/cedit/view/window.cpp:548
+#: src/cedit/view/window.cpp:552
 msgid "Tab Width"
 msgstr ""
 
-#: src/cedit/view/window.cpp:548
+#: src/cedit/view/window.cpp:552
 msgid "New Tab Width: "
 msgstr ""
 
@@ -269,58 +269,62 @@ msgid "Setting(_S)"
 msgstr ""
 
 #: src/resource/ui/menubar.xml.h:33
-msgid "Option(_O)"
+msgid "Expand(_E)"
 msgstr ""
 
 #: src/resource/ui/menubar.xml.h:34
-msgid "Encoding(_E)"
+msgid "Option(_O)"
 msgstr ""
 
 #: src/resource/ui/menubar.xml.h:35
-msgid "Font(_F)"
+msgid "Encoding(_E)"
 msgstr ""
 
 #: src/resource/ui/menubar.xml.h:36
-msgid "Show Toolbar(_S)"
+msgid "Font(_F)"
 msgstr ""
 
 #: src/resource/ui/menubar.xml.h:37
-msgid "Tab Width(_T)"
+msgid "Show Toolbar(_S)"
 msgstr ""
 
 #: src/resource/ui/menubar.xml.h:38
-msgid "Flymake(_M)"
+msgid "Tab Width(_T)"
 msgstr ""
 
 #: src/resource/ui/menubar.xml.h:39
-msgid "Wrap Text"
+msgid "Flymake(_M)"
 msgstr ""
 
 #: src/resource/ui/menubar.xml.h:40
-msgid "Show Line Numbers"
+msgid "Wrap Text"
 msgstr ""
 
 #: src/resource/ui/menubar.xml.h:41
-msgid "Auto Indent"
+msgid "Show Line Numbers"
 msgstr ""
 
 #: src/resource/ui/menubar.xml.h:42
-msgid "Highlight Current Line"
+msgid "Auto Indent"
 msgstr ""
 
 #: src/resource/ui/menubar.xml.h:43
-msgid "Spaces instead of Tabs"
+msgid "Highlight Current Line"
 msgstr ""
 
 #: src/resource/ui/menubar.xml.h:44
-msgid "Hungry Delete"
+msgid "Spaces instead of Tabs"
 msgstr ""
 
 #: src/resource/ui/menubar.xml.h:45
-msgid "Help(_H)"
+msgid "Hungry Delete"
 msgstr ""
 
 #: src/resource/ui/menubar.xml.h:46
+msgid "Help(_H)"
+msgstr ""
+
+#: src/resource/ui/menubar.xml.h:47
 msgid "Version Info(_V)"
 msgstr ""
 

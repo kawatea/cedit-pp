@@ -199,6 +199,7 @@ namespace view {
         add_action("library_remove", sigc::mem_fun(*this, &window::on_library_remove));
         
         add_action("macro_setting", sigc::mem_fun(*this, &window::on_macro_setting));
+        add_action("macro_expand", sigc::mem_fun(*this, &window::on_macro_expand));
         
         action_encoding = add_action_radio_string("option_encoding", sigc::mem_fun(*this, &window::on_option_encoding), "UTF-8");
         add_action("option_font", sigc::mem_fun(*this, &window::on_option_font));
@@ -279,7 +280,6 @@ namespace view {
                 case GDK_KEY_BackSpace: return (setting.get_boolean(language, io::setting::HUNGRY_DELETE) && !buffer->get_has_selection()) ? function::hungry_delete_backward(buffer) : false;
                 case GDK_KEY_Delete: return (setting.get_boolean(language, io::setting::HUNGRY_DELETE) && !buffer->get_has_selection()) ? function::hungry_delete_forward(buffer) : false;
                 case GDK_KEY_Tab: return setting.get_boolean(language, io::setting::AUTO_INDENT) ? (function::indent(buffer, setting.get_boolean(language, io::setting::INSERT_SPACES), view.get_tab_width()), true) : false;
-                case GDK_KEY_Return: return (event->state == GDK_SHIFT_MASK) ? function::apply_macro(buffer) : false;
                 case GDK_KEY_braceright: brace_pressed = true;
                 default: return false;
             }
@@ -519,6 +519,10 @@ namespace view {
     void window::on_macro_setting() {
         static macro_dialog dialog(*this);
         dialog.update_macros();
+    }
+    
+    void window::on_macro_expand() {
+        function::apply_macro(buffer);
     }
     
     void window::on_option_encoding(const Glib::ustring& encoding) {

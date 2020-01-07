@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: cedit++ 1.1.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-12-27 17:19+0900\n"
+"POT-Creation-Date: 2020-01-07 22:52+0900\n"
 "PO-Revision-Date: 2018-05-19 19:20+0900\n"
 "Last-Translator: Automatically generated\n"
 "Language-Team: none\n"
@@ -26,7 +26,7 @@ msgstr "編集中のファイル"
 msgid "User-friendly source code editor"
 msgstr "使いやすいソースコードエディタ"
 
-#: src/cedit/view/file_chooser_dialog.cpp:23 src/cedit/view/macro_dialog.cpp:74
+#: src/cedit/view/file_chooser_dialog.cpp:23 src/cedit/view/macro_dialog.cpp:70
 #: src/cedit/view/save_check_dialog.cpp:24
 msgid "Cancel"
 msgstr "キャンセル"
@@ -56,15 +56,15 @@ msgstr "ライブラリの追加"
 msgid "Do you overwrite an existing library?"
 msgstr "既に存在するライブラリを上書きしますか？"
 
-#: src/cedit/view/macro_dialog.cpp:30
+#: src/cedit/view/macro_dialog.cpp:28
 msgid "Macro"
 msgstr "マクロ"
 
-#: src/cedit/view/macro_dialog.cpp:30
+#: src/cedit/view/macro_dialog.cpp:28
 msgid "Before expansion: "
 msgstr "展開前: "
 
-#: src/cedit/view/macro_dialog.cpp:30
+#: src/cedit/view/macro_dialog.cpp:28
 msgid "After expansion: "
 msgstr "展開後: "
 
@@ -76,15 +76,15 @@ msgstr "展開前"
 msgid "After expansion"
 msgstr "展開後"
 
-#: src/cedit/view/macro_dialog.cpp:71
+#: src/cedit/view/macro_dialog.cpp:67
 msgid "Create"
 msgstr "作成"
 
-#: src/cedit/view/macro_dialog.cpp:72
+#: src/cedit/view/macro_dialog.cpp:68
 msgid "Remove"
 msgstr "削除"
 
-#: src/cedit/view/macro_dialog.cpp:73 src/cedit/view/save_check_dialog.cpp:22
+#: src/cedit/view/macro_dialog.cpp:69 src/cedit/view/save_check_dialog.cpp:22
 #: src/cedit/view/window.cpp:391
 msgid "Save"
 msgstr "保存"
@@ -133,11 +133,11 @@ msgstr "ライブラリの呼び出し"
 msgid "Library Remove"
 msgstr "ライブラリの削除"
 
-#: src/cedit/view/window.cpp:548
+#: src/cedit/view/window.cpp:552
 msgid "Tab Width"
 msgstr "タブ幅"
 
-#: src/cedit/view/window.cpp:548
+#: src/cedit/view/window.cpp:552
 msgid "New Tab Width: "
 msgstr "新しいタブ幅"
 
@@ -270,58 +270,62 @@ msgid "Setting(_S)"
 msgstr "設定(_S)"
 
 #: src/resource/ui/menubar.xml.h:33
+msgid "Expand(_E)"
+msgstr "展開(_E)"
+
+#: src/resource/ui/menubar.xml.h:34
 msgid "Option(_O)"
 msgstr "オプション(_O)"
 
-#: src/resource/ui/menubar.xml.h:34
+#: src/resource/ui/menubar.xml.h:35
 msgid "Encoding(_E)"
 msgstr "文字コード(_E)"
 
-#: src/resource/ui/menubar.xml.h:35
+#: src/resource/ui/menubar.xml.h:36
 msgid "Font(_F)"
 msgstr "フォント(_F)"
 
-#: src/resource/ui/menubar.xml.h:36
+#: src/resource/ui/menubar.xml.h:37
 msgid "Show Toolbar(_S)"
 msgstr "ツールバーを表示する(_S)"
 
-#: src/resource/ui/menubar.xml.h:37
+#: src/resource/ui/menubar.xml.h:38
 msgid "Tab Width(_T)"
 msgstr "タブ幅の変更(_T)"
 
-#: src/resource/ui/menubar.xml.h:38
+#: src/resource/ui/menubar.xml.h:39
 msgid "Flymake(_M)"
 msgstr "Flymakeの設定(_M)"
 
-#: src/resource/ui/menubar.xml.h:39
+#: src/resource/ui/menubar.xml.h:40
 msgid "Wrap Text"
 msgstr "右端で折り返す"
 
-#: src/resource/ui/menubar.xml.h:40
+#: src/resource/ui/menubar.xml.h:41
 msgid "Show Line Numbers"
 msgstr "行番号を表示する"
 
-#: src/resource/ui/menubar.xml.h:41
+#: src/resource/ui/menubar.xml.h:42
 msgid "Auto Indent"
 msgstr "自動でインデントする"
 
-#: src/resource/ui/menubar.xml.h:42
+#: src/resource/ui/menubar.xml.h:43
 msgid "Highlight Current Line"
 msgstr "カーソルの行を強調表示する"
 
-#: src/resource/ui/menubar.xml.h:43
+#: src/resource/ui/menubar.xml.h:44
 msgid "Spaces instead of Tabs"
 msgstr "タブの代わりにスペースを挿入する"
 
-#: src/resource/ui/menubar.xml.h:44
+#: src/resource/ui/menubar.xml.h:45
 msgid "Hungry Delete"
 msgstr "空白をまとめて消去する"
 
-#: src/resource/ui/menubar.xml.h:45
+#: src/resource/ui/menubar.xml.h:46
 msgid "Help(_H)"
 msgstr "ヘルプ(_H)"
 
-#: src/resource/ui/menubar.xml.h:46
+#: src/resource/ui/menubar.xml.h:47
 msgid "Version Info(_V)"
 msgstr "ヴァージョン情報(_V)"
 

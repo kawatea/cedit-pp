@@ -169,6 +169,11 @@
           <attribute name="icon">media-record</attribute>
           <attribute name="action">win.macro_setting</attribute>
         </item>
+        <item>
+          <attribute name="label" translatable="yes">Expand(_E)</attribute>
+          <attribute name="icon">media-playback-start</attribute>
+          <attribute name="action">win.macro_expand</attribute>
+        </item>
       </section>
     </submenu>
     <submenu>
