@@ -70,7 +70,7 @@ namespace view {
         Gtk::Entry after_entry;
         std::set<Glib::ustring> keys;
         
-        void on_entry_change(Gtk::Button* create_button, const bool before);
+        void on_entry_change(Gtk::Button* create_button);
         void on_selection_change(Gtk::Button* remove_button);
         void on_before_edit(const Glib::ustring& path, const Glib::ustring& text);
         void on_after_edit(const Glib::ustring& path, const Glib::ustring& text);
