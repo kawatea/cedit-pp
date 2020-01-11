@@ -56,6 +56,7 @@ namespace io {
         // For test
         static void create(const std::string& filename);
         static void destroy();
+        static std::vector<std::pair<Glib::ustring, Glib::ustring>> list_acceleratable_actions();
         
         void load();
         void save();

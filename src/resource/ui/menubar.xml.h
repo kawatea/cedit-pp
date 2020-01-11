@@ -34,6 +34,7 @@ char *s = N_("Expand(_E)");
 char *s = N_("Option(_O)");
 char *s = N_("Encoding(_E)");
 char *s = N_("Font(_F)");
+char *s = N_("Key Config(_K)");
 char *s = N_("Show Toolbar(_S)");
 char *s = N_("Tab Width(_T)");
 char *s = N_("Flymake(_M)");

@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: cedit++ 1.1.1\n"
+"Project-Id-Version: cedit++ 1.1.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-01-07 22:52+0900\n"
+"POT-Creation-Date: 2020-01-12 00:21+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -21,11 +21,140 @@ msgstr ""
 msgid "Untitled"
 msgstr ""
 
+#: src/cedit/io/setting.cpp:78
+msgid "File/New"
+msgstr ""
+
+#: src/cedit/io/setting.cpp:79
+msgid "File/Open"
+msgstr ""
+
+#: src/cedit/io/setting.cpp:80
+msgid "File/Reload"
+msgstr ""
+
+#: src/cedit/io/setting.cpp:81
+msgid "File/Save"
+msgstr ""
+
+#: src/cedit/io/setting.cpp:82
+msgid "File/Save As"
+msgstr ""
+
+#: src/cedit/io/setting.cpp:83
+msgid "File/Print"
+msgstr ""
+
+#: src/cedit/io/setting.cpp:84
+msgid "File/Quit"
+msgstr ""
+
+#: src/cedit/io/setting.cpp:85
+msgid "Edit/Undo"
+msgstr ""
+
+#: src/cedit/io/setting.cpp:86
+msgid "Edit/Redo"
+msgstr ""
+
+#: src/cedit/io/setting.cpp:87
+msgid "Edit/Cut"
+msgstr ""
+
+#: src/cedit/io/setting.cpp:88
+msgid "Edit/Copy"
+msgstr ""
+
+#: src/cedit/io/setting.cpp:89
+msgid "Edit/Paste"
+msgstr ""
+
+#: src/cedit/io/setting.cpp:90
+msgid "Edit/Delete"
+msgstr ""
+
+#: src/cedit/io/setting.cpp:91
+msgid "Edit/Kill Line"
+msgstr ""
+
+#: src/cedit/io/setting.cpp:92
+msgid "Edit/Select All"
+msgstr ""
+
+#: src/cedit/io/setting.cpp:93
+msgid "Search/Find"
+msgstr ""
+
+#: src/cedit/io/setting.cpp:94
+msgid "Search/Replace"
+msgstr ""
+
+#: src/cedit/io/setting.cpp:95
+msgid "Move/Move to Line"
+msgstr ""
+
+#: src/cedit/io/setting.cpp:96
+msgid "Move/Move to Beginning of File"
+msgstr ""
+
+#: src/cedit/io/setting.cpp:97
+msgid "Move/Move to End of File"
+msgstr ""
+
+#: src/cedit/io/setting.cpp:98
+msgid "Move/Move to Beginning of Line"
+msgstr ""
+
+#: src/cedit/io/setting.cpp:99
+msgid "Move/Move to End of Line"
+msgstr ""
+
+#: src/cedit/io/setting.cpp:100
+msgid "Library/Call"
+msgstr ""
+
+#: src/cedit/io/setting.cpp:101
+msgid "Library/Add"
+msgstr ""
+
+#: src/cedit/io/setting.cpp:102
+msgid "Library/Remove"
+msgstr ""
+
+#: src/cedit/io/setting.cpp:103
+msgid "Macro/Setting"
+msgstr ""
+
+#: src/cedit/io/setting.cpp:104
+msgid "Macro/Expand"
+msgstr ""
+
+#: src/cedit/io/setting.cpp:105
+msgid "Option/Font"
+msgstr ""
+
+#: src/cedit/io/setting.cpp:106
+msgid "Option/Key Config"
+msgstr ""
+
+#: src/cedit/io/setting.cpp:107
+msgid "Option/Tab Width"
+msgstr ""
+
+#: src/cedit/io/setting.cpp:108
+msgid "Option/Flymake"
+msgstr ""
+
+#: src/cedit/io/setting.cpp:109
+msgid "Help/Version Info"
+msgstr ""
+
 #: src/cedit/view/about_dialog.cpp:27
 msgid "User-friendly source code editor"
 msgstr ""
 
-#: src/cedit/view/file_chooser_dialog.cpp:23 src/cedit/view/macro_dialog.cpp:70
+#: src/cedit/view/file_chooser_dialog.cpp:23
+#: src/cedit/view/key_config_dialog.cpp:61 src/cedit/view/macro_dialog.cpp:70
 #: src/cedit/view/save_check_dialog.cpp:24
 msgid "Cancel"
 msgstr ""
@@ -36,6 +165,27 @@ msgstr ""
 
 #: src/cedit/view/font_chooser_dialog.cpp:21
 msgid "Font"
+msgstr ""
+
+#: src/cedit/view/key_config_dialog.cpp:30
+msgid "Key Config"
+msgstr ""
+
+#: src/cedit/view/key_config_dialog.cpp:37
+msgid "Action"
+msgstr ""
+
+#: src/cedit/view/key_config_dialog.cpp:39
+msgid "Key1"
+msgstr ""
+
+#: src/cedit/view/key_config_dialog.cpp:47
+msgid "Key2"
+msgstr ""
+
+#: src/cedit/view/key_config_dialog.cpp:60 src/cedit/view/macro_dialog.cpp:69
+#: src/cedit/view/save_check_dialog.cpp:22 src/cedit/view/window.cpp:398
+msgid "Save"
 msgstr ""
 
 #: src/cedit/view/library_chooser_dialog.cpp:25
@@ -83,11 +233,6 @@ msgstr ""
 msgid "Remove"
 msgstr ""
 
-#: src/cedit/view/macro_dialog.cpp:69 src/cedit/view/save_check_dialog.cpp:22
-#: src/cedit/view/window.cpp:391
-msgid "Save"
-msgstr ""
-
 #: src/cedit/view/save_check_dialog.cpp:21
 msgid "Do you want to save changes?"
 msgstr ""
@@ -108,35 +253,35 @@ msgstr ""
 msgid "Interactive"
 msgstr ""
 
-#: src/cedit/view/window.cpp:363
+#: src/cedit/view/window.cpp:370
 msgid "Open"
 msgstr ""
 
-#: src/cedit/view/window.cpp:391
+#: src/cedit/view/window.cpp:398
 msgid "Save As"
 msgstr ""
 
-#: src/cedit/view/window.cpp:458
+#: src/cedit/view/window.cpp:465
 msgid "Move to Line"
 msgstr ""
 
-#: src/cedit/view/window.cpp:458
+#: src/cedit/view/window.cpp:465
 msgid "Line Number: "
 msgstr ""
 
-#: src/cedit/view/window.cpp:494
+#: src/cedit/view/window.cpp:501
 msgid "Library Call"
 msgstr ""
 
-#: src/cedit/view/window.cpp:512
+#: src/cedit/view/window.cpp:519
 msgid "Library Remove"
 msgstr ""
 
-#: src/cedit/view/window.cpp:552
+#: src/cedit/view/window.cpp:565
 msgid "Tab Width"
 msgstr ""
 
-#: src/cedit/view/window.cpp:552
+#: src/cedit/view/window.cpp:565
 msgid "New Tab Width: "
 msgstr ""
 
@@ -285,46 +430,50 @@ msgid "Font(_F)"
 msgstr ""
 
 #: src/resource/ui/menubar.xml.h:37
-msgid "Show Toolbar(_S)"
+msgid "Key Config(_K)"
 msgstr ""
 
 #: src/resource/ui/menubar.xml.h:38
-msgid "Tab Width(_T)"
+msgid "Show Toolbar(_S)"
 msgstr ""
 
 #: src/resource/ui/menubar.xml.h:39
-msgid "Flymake(_M)"
+msgid "Tab Width(_T)"
 msgstr ""
 
 #: src/resource/ui/menubar.xml.h:40
-msgid "Wrap Text"
+msgid "Flymake(_M)"
 msgstr ""
 
 #: src/resource/ui/menubar.xml.h:41
-msgid "Show Line Numbers"
+msgid "Wrap Text"
 msgstr ""
 
 #: src/resource/ui/menubar.xml.h:42
-msgid "Auto Indent"
+msgid "Show Line Numbers"
 msgstr ""
 
 #: src/resource/ui/menubar.xml.h:43
-msgid "Highlight Current Line"
+msgid "Auto Indent"
 msgstr ""
 
 #: src/resource/ui/menubar.xml.h:44
-msgid "Spaces instead of Tabs"
+msgid "Highlight Current Line"
 msgstr ""
 
 #: src/resource/ui/menubar.xml.h:45
-msgid "Hungry Delete"
+msgid "Spaces instead of Tabs"
 msgstr ""
 
 #: src/resource/ui/menubar.xml.h:46
-msgid "Help(_H)"
+msgid "Hungry Delete"
 msgstr ""
 
 #: src/resource/ui/menubar.xml.h:47
+msgid "Help(_H)"
+msgstr ""
+
+#: src/resource/ui/menubar.xml.h:48
 msgid "Version Info(_V)"
 msgstr ""
 

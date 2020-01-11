@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: cedit++ 1.1.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-01-07 22:52+0900\n"
+"POT-Creation-Date: 2020-01-12 00:21+0900\n"
 "PO-Revision-Date: 2018-05-19 19:20+0900\n"
 "Last-Translator: Automatically generated\n"
 "Language-Team: none\n"
@@ -22,11 +22,140 @@ msgstr ""
 msgid "Untitled"
 msgstr "編集中のファイル"
 
+#: src/cedit/io/setting.cpp:78
+msgid "File/New"
+msgstr "ファイル/新規作成"
+
+#: src/cedit/io/setting.cpp:79
+msgid "File/Open"
+msgstr "ファイル/開く"
+
+#: src/cedit/io/setting.cpp:80
+msgid "File/Reload"
+msgstr "ファイル/再読み込み"
+
+#: src/cedit/io/setting.cpp:81
+msgid "File/Save"
+msgstr "ファイル/上書き保存"
+
+#: src/cedit/io/setting.cpp:82
+msgid "File/Save As"
+msgstr "ファイル/名前をつけて保存"
+
+#: src/cedit/io/setting.cpp:83
+msgid "File/Print"
+msgstr "ファイル/印刷"
+
+#: src/cedit/io/setting.cpp:84
+msgid "File/Quit"
+msgstr "ファイル/終了"
+
+#: src/cedit/io/setting.cpp:85
+msgid "Edit/Undo"
+msgstr "編集/元に戻す"
+
+#: src/cedit/io/setting.cpp:86
+msgid "Edit/Redo"
+msgstr "編集/やり直す"
+
+#: src/cedit/io/setting.cpp:87
+msgid "Edit/Cut"
+msgstr "編集/切り取り"
+
+#: src/cedit/io/setting.cpp:88
+msgid "Edit/Copy"
+msgstr "編集/コピー"
+
+#: src/cedit/io/setting.cpp:89
+msgid "Edit/Paste"
+msgstr "編集/貼り付け"
+
+#: src/cedit/io/setting.cpp:90
+msgid "Edit/Delete"
+msgstr "編集/削除"
+
+#: src/cedit/io/setting.cpp:91
+msgid "Edit/Kill Line"
+msgstr "編集/一行削除"
+
+#: src/cedit/io/setting.cpp:92
+msgid "Edit/Select All"
+msgstr "編集/全て選択"
+
+#: src/cedit/io/setting.cpp:93
+msgid "Search/Find"
+msgstr "検索/検索"
+
+#: src/cedit/io/setting.cpp:94
+msgid "Search/Replace"
+msgstr "検索/置換"
+
+#: src/cedit/io/setting.cpp:95
+msgid "Move/Move to Line"
+msgstr "移動/指定行に移動"
+
+#: src/cedit/io/setting.cpp:96
+msgid "Move/Move to Beginning of File"
+msgstr "移動/ファイルの先頭に移動"
+
+#: src/cedit/io/setting.cpp:97
+msgid "Move/Move to End of File"
+msgstr "移動/ファイルの末尾に移動"
+
+#: src/cedit/io/setting.cpp:98
+msgid "Move/Move to Beginning of Line"
+msgstr "移動/行頭に移動"
+
+#: src/cedit/io/setting.cpp:99
+msgid "Move/Move to End of Line"
+msgstr "移動/行末に移動"
+
+#: src/cedit/io/setting.cpp:100
+msgid "Library/Call"
+msgstr "ライブラリ/呼び出し"
+
+#: src/cedit/io/setting.cpp:101
+msgid "Library/Add"
+msgstr "ライブラリ/追加"
+
+#: src/cedit/io/setting.cpp:102
+msgid "Library/Remove"
+msgstr "ライブラリ/削除"
+
+#: src/cedit/io/setting.cpp:103
+msgid "Macro/Setting"
+msgstr "マクロ/設定"
+
+#: src/cedit/io/setting.cpp:104
+msgid "Macro/Expand"
+msgstr "マクロ/展開"
+
+#: src/cedit/io/setting.cpp:105
+msgid "Option/Font"
+msgstr "オプション/フォント"
+
+#: src/cedit/io/setting.cpp:106
+msgid "Option/Key Config"
+msgstr "オプション/キーの設定"
+
+#: src/cedit/io/setting.cpp:107
+msgid "Option/Tab Width"
+msgstr "オプション/タブ幅の変更"
+
+#: src/cedit/io/setting.cpp:108
+msgid "Option/Flymake"
+msgstr "オプション/Flymakeの設定"
+
+#: src/cedit/io/setting.cpp:109
+msgid "Help/Version Info"
+msgstr "ヘルプ/ヴァージョン情報"
+
 #: src/cedit/view/about_dialog.cpp:27
 msgid "User-friendly source code editor"
 msgstr "使いやすいソースコードエディタ"
 
-#: src/cedit/view/file_chooser_dialog.cpp:23 src/cedit/view/macro_dialog.cpp:70
+#: src/cedit/view/file_chooser_dialog.cpp:23
+#: src/cedit/view/key_config_dialog.cpp:61 src/cedit/view/macro_dialog.cpp:70
 #: src/cedit/view/save_check_dialog.cpp:24
 msgid "Cancel"
 msgstr "キャンセル"
@@ -38,6 +167,27 @@ msgstr "コマンド: "
 #: src/cedit/view/font_chooser_dialog.cpp:21
 msgid "Font"
 msgstr "フォント"
+
+#: src/cedit/view/key_config_dialog.cpp:30
+msgid "Key Config"
+msgstr "キーの設定"
+
+#: src/cedit/view/key_config_dialog.cpp:37
+msgid "Action"
+msgstr "アクション"
+
+#: src/cedit/view/key_config_dialog.cpp:39
+msgid "Key1"
+msgstr "キー 1"
+
+#: src/cedit/view/key_config_dialog.cpp:47
+msgid "Key2"
+msgstr "キー 2"
+
+#: src/cedit/view/key_config_dialog.cpp:60 src/cedit/view/macro_dialog.cpp:69
+#: src/cedit/view/save_check_dialog.cpp:22 src/cedit/view/window.cpp:398
+msgid "Save"
+msgstr "保存"
 
 #: src/cedit/view/library_chooser_dialog.cpp:25
 #: src/cedit/view/library_save_dialog.cpp:24
@@ -84,11 +234,6 @@ msgstr "作成"
 msgid "Remove"
 msgstr "削除"
 
-#: src/cedit/view/macro_dialog.cpp:69 src/cedit/view/save_check_dialog.cpp:22
-#: src/cedit/view/window.cpp:391
-msgid "Save"
-msgstr "保存"
-
 #: src/cedit/view/save_check_dialog.cpp:21
 msgid "Do you want to save changes?"
 msgstr "編集中のファイルを保存しますか？"
@@ -109,35 +254,35 @@ msgstr "制御文字を使用"
 msgid "Interactive"
 msgstr "１つずつ置換"
 
-#: src/cedit/view/window.cpp:363
+#: src/cedit/view/window.cpp:370
 msgid "Open"
 msgstr "開く"
 
-#: src/cedit/view/window.cpp:391
+#: src/cedit/view/window.cpp:398
 msgid "Save As"
 msgstr "名前をつけて保存"
 
-#: src/cedit/view/window.cpp:458
+#: src/cedit/view/window.cpp:465
 msgid "Move to Line"
 msgstr "指定行に移動"
 
-#: src/cedit/view/window.cpp:458
+#: src/cedit/view/window.cpp:465
 msgid "Line Number: "
 msgstr "行番号: "
 
-#: src/cedit/view/window.cpp:494
+#: src/cedit/view/window.cpp:501
 msgid "Library Call"
 msgstr "ライブラリの呼び出し"
 
-#: src/cedit/view/window.cpp:512
+#: src/cedit/view/window.cpp:519
 msgid "Library Remove"
 msgstr "ライブラリの削除"
 
-#: src/cedit/view/window.cpp:552
+#: src/cedit/view/window.cpp:565
 msgid "Tab Width"
 msgstr "タブ幅"
 
-#: src/cedit/view/window.cpp:552
+#: src/cedit/view/window.cpp:565
 msgid "New Tab Width: "
 msgstr "新しいタブ幅"
 
@@ -286,46 +431,50 @@ msgid "Font(_F)"
 msgstr "フォント(_F)"
 
 #: src/resource/ui/menubar.xml.h:37
+msgid "Key Config(_K)"
+msgstr "キーの設定(_K)"
+
+#: src/resource/ui/menubar.xml.h:38
 msgid "Show Toolbar(_S)"
 msgstr "ツールバーを表示する(_S)"
 
-#: src/resource/ui/menubar.xml.h:38
+#: src/resource/ui/menubar.xml.h:39
 msgid "Tab Width(_T)"
 msgstr "タブ幅の変更(_T)"
 
-#: src/resource/ui/menubar.xml.h:39
+#: src/resource/ui/menubar.xml.h:40
 msgid "Flymake(_M)"
 msgstr "Flymakeの設定(_M)"
 
-#: src/resource/ui/menubar.xml.h:40
+#: src/resource/ui/menubar.xml.h:41
 msgid "Wrap Text"
 msgstr "右端で折り返す"
 
-#: src/resource/ui/menubar.xml.h:41
+#: src/resource/ui/menubar.xml.h:42
 msgid "Show Line Numbers"
 msgstr "行番号を表示する"
 
-#: src/resource/ui/menubar.xml.h:42
+#: src/resource/ui/menubar.xml.h:43
 msgid "Auto Indent"
 msgstr "自動でインデントする"
 
-#: src/resource/ui/menubar.xml.h:43
+#: src/resource/ui/menubar.xml.h:44
 msgid "Highlight Current Line"
 msgstr "カーソルの行を強調表示する"
 
-#: src/resource/ui/menubar.xml.h:44
+#: src/resource/ui/menubar.xml.h:45
 msgid "Spaces instead of Tabs"
 msgstr "タブの代わりにスペースを挿入する"
 
-#: src/resource/ui/menubar.xml.h:45
+#: src/resource/ui/menubar.xml.h:46
 msgid "Hungry Delete"
 msgstr "空白をまとめて消去する"
 
-#: src/resource/ui/menubar.xml.h:46
+#: src/resource/ui/menubar.xml.h:47
 msgid "Help(_H)"
 msgstr "ヘルプ(_H)"
 
-#: src/resource/ui/menubar.xml.h:47
+#: src/resource/ui/menubar.xml.h:48
 msgid "Version Info(_V)"
 msgstr "ヴァージョン情報(_V)"
 

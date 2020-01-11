@@ -222,6 +222,10 @@
           <attribute name="action">win.option_font</attribute>
         </item>
         <item>
+          <attribute name="label" translatable="yes">Key Config(_K)</attribute>
+          <attribute name="action">win.option_key_config</attribute>
+        </item>
+        <item>
           <attribute name="label" translatable="yes">Show Toolbar(_S)</attribute>
           <attribute name="action">win.option_show_toolbar</attribute>
         </item>

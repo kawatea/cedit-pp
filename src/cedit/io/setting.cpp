@@ -21,6 +21,7 @@
 #include <string>
 #include <vector>
 #include <glibmm/miscutils.h>
+#include "io/gettext.h"
 #include "io/io_util.h"
 #include "io/setting.h"
 
@@ -70,6 +71,44 @@ namespace io {
     
     void setting::destroy() {
         instance.reset();
+    }
+    
+    std::vector<std::pair<Glib::ustring, Glib::ustring>> setting::list_acceleratable_actions() {
+        static std::vector<std::pair<Glib::ustring, Glib::ustring>> acceleratable_actions = {
+            {"win.file_new", _("File/New")},
+            {"win.file_open", _("File/Open")},
+            {"win.file_reload", _("File/Reload")},
+            {"win.file_save", _("File/Save")},
+            {"win.file_save_as", _("File/Save As")},
+            {"win.file_print", _("File/Print")},
+            {"win.file_quit", _("File/Quit")},
+            {"win.edit_undo", _("Edit/Undo")},
+            {"win.edit_redo", _("Edit/Redo")},
+            {"win.edit_cut", _("Edit/Cut")},
+            {"win.edit_copy", _("Edit/Copy")},
+            {"win.edit_paste", _("Edit/Paste")},
+            {"win.edit_delete", _("Edit/Delete")},
+            {"win.edit_kill_line", _("Edit/Kill Line")},
+            {"win.edit_select_all", _("Edit/Select All")},
+            {"win.search_find", _("Search/Find")},
+            {"win.search_replace", _("Search/Replace")},
+            {"win.move_line", _("Move/Move to Line")},
+            {"win.move_top", _("Move/Move to Beginning of File")},
+            {"win.move_bottom", _("Move/Move to End of File")},
+            {"win.move_left", _("Move/Move to Beginning of Line")},
+            {"win.move_right", _("Move/Move to End of Line")},
+            {"win.library_call", _("Library/Call")},
+            {"win.library_add", _("Library/Add")},
+            {"win.library_remove", _("Library/Remove")},
+            {"win.macro_setting", _("Macro/Setting")},
+            {"win.macro_expand", _("Macro/Expand")},
+            {"win.option_font", _("Option/Font")},
+            {"win.option_key_config", _("Option/Key Config")},
+            {"win.option_tab_width", _("Option/Tab Width")},
+            {"win.option_flymake", _("Option/Flymake")},
+            {"win.help_version_info", _("Help/Version Info")}
+        };
+        return acceleratable_actions;
     }
     
     void setting::load() {
@@ -149,6 +188,7 @@ namespace io {
     }
     
     void setting::set_accelerators(const std::map<Glib::ustring, std::vector<Glib::ustring>>& accelerators) {
+        if (key_file.has_group(ACCELERATOR)) key_file.remove_group(ACCELERATOR);
         for (const std::pair<Glib::ustring, std::vector<Glib::ustring>>& accelerator : accelerators) key_file.set_string_list(ACCELERATOR, accelerator.first, accelerator.second);
         save();
     }

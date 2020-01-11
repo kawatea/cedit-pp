@@ -40,6 +40,7 @@
 #include "view/file_chooser_dialog.h"
 #include "view/flymake_dialog.h"
 #include "view/font_chooser_dialog.h"
+#include "view/key_config_dialog.h"
 #include "view/library_chooser_dialog.h"
 #include "view/library_save_dialog.h"
 #include "view/macro_dialog.h"
@@ -203,6 +204,7 @@ namespace view {
         
         action_encoding = add_action_radio_string("option_encoding", sigc::mem_fun(*this, &window::on_option_encoding), "UTF-8");
         add_action("option_font", sigc::mem_fun(*this, &window::on_option_font));
+        add_action("option_key_config", sigc::mem_fun(*this, &window::on_option_key_config));
         action_show_toolbar = add_action_bool("option_show_toolbar", sigc::mem_fun(*this, &window::on_option_show_toolbar), true);
         add_action("option_tab_width", sigc::mem_fun(*this, &window::on_option_tab_width));
         add_action("option_flymake", sigc::mem_fun(*this, &window::on_option_flymake));
@@ -244,10 +246,15 @@ namespace view {
         buffer->end_not_undoable_action();
     }
     
+    void window::set_accelerators() {
+        const Glib::RefPtr<Gtk::Application> application = get_application();
+        for (const std::pair<Glib::ustring, Glib::ustring>& action : io::setting::list_acceleratable_actions()) application->unset_accels_for_action(action.first);
+        for (const std::pair<Glib::ustring, std::vector<Glib::ustring>>& accelerator : io::setting::get().get_accelerators()) application->set_accels_for_action(accelerator.first, accelerator.second);
+    }
+    
     void window::on_show() {
         Gtk::ApplicationWindow::on_show();
-        const Glib::RefPtr<Gtk::Application> application = get_application();
-        for (const std::pair<Glib::ustring, std::vector<Glib::ustring>>& accelerator : io::setting::get().get_accelerators()) application->set_accels_for_action(accelerator.first, accelerator.second);
+        set_accelerators();
     }
     
     bool window::on_delete_event(GdkEventAny* event) {
@@ -539,6 +546,12 @@ namespace view {
             io::setting::get().set_string(io::setting::FONT, font);
             view.override_font(Pango::FontDescription(font));
         }
+    }
+    
+    void window::on_option_key_config() {
+        static key_config_dialog dialog(*this);
+        const bool updated = dialog.update_key_config();
+        if (updated) set_accelerators();
     }
     
     void window::on_option_show_toolbar() {

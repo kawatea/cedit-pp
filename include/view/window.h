@@ -90,6 +90,7 @@ namespace view {
         
         void on_option_encoding(const Glib::ustring& encoding);
         void on_option_font();
+        void on_option_key_config();
         void on_option_show_toolbar();
         void on_option_tab_width();
         void on_option_flymake();
@@ -136,6 +137,7 @@ namespace view {
         void add_actions();
         void change_file();
         void load_file();
+        void set_accelerators();
         
         bool can_continue();
         void update_edited(const bool edited);
